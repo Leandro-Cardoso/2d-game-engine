@@ -22,7 +22,8 @@ gráficas.
 
 ## Documentos
 
-* [Plano de Gerenciamento do Projeto](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/PLANO%20DE%20GERENCIAMENTO%20DO%20PROJETO.pdf)
+* [Introdução e Metodologia](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/INTRODUCAO-DO-PROJETO.pdf)
+* [Plano de Gerenciamento do Projeto (PGP)](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/PLANO-DE-GERENCIAMENTO-DO-PROJETO.pdf)
 * Documentação (Sendo elaborada) ⚙️🔨
 * Artigo do TCC (Sendo elaborada) ⚙️🔨
 
