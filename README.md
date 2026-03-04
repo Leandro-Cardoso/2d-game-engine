@@ -31,7 +31,58 @@ gráficas.
 
 Em desenvolvimento.
 
-## Proximos Passos
+## Fases de Desenvolvimento
 
-* Elaborar documentação tecnica
-* Definir nome comercial
+### Fase 1 - Planejamento formal:
+
+* Elaboração do Plano de Gerenciamento.
+* Definição da arquitetura inicial.
+* Levantamento de requisitos.
+
+### Fase 2 - Medelagem arquitetural
+
+* Modelagem UML (classes e modulos).
+* Definição de responsabilidades.
+* Estruturação dos pacotes da biblioteca.
+
+### Fase 3 - Implementação do Núcleo (core)
+
+* Estrutura base do projeto.
+* Loop principal.
+* Sistema de inicialização.
+
+### Fase 4 - Renderização 2D
+
+* Sistema de tiles.
+* Carregamento de sprites.
+* Renderização em tela.
+
+### Fase 5 - Gerenciamento de Recursos
+
+* Implementação do Resource Manager.
+* Controle de carregamento e descarregamento.
+* Otimização de memoria.
+
+### Fase 6 - Sistema de Entidades
+
+* Criação da classe base Entity.
+* Sistema de atualização.
+* Gerenciamento de multiplas entidades.
+
+### Fase 7 - Sistema de Colisão
+
+* Implementação de bounding box.
+* Verificação de colisão com mapa.
+* Integração com entidades.
+
+### Fase 8 - Testes e Validação
+
+* Criação do prototipo funcional.
+* Testes de desempenho.
+* Correção de inconsistencias.
+
+### Fase 9 - 
+
+* Revisão do TCC.
+* Consolidação de diagramas.
+* Preparação para entrega.
