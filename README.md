@@ -27,8 +27,8 @@ gráficas.
 ## Documentos
 
 * [Documento de Requisitos](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/DOCUMENTO-DE-REQUISITOS.pdf) ⚙️🔨
-* Documento de Arquitetura de Software (SAD) ⚙️🔨
-* [Plano de Gerenciamento do Projeto (PGP)](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/PLANO-DE-GERENCIAMENTO-DO-PROJETO.pdf)
+* Documento de Arquitetura de Software ⚙️🔨
+* [Plano de Gerenciamento do Projeto](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/PLANO-DE-GERENCIAMENTO-DO-PROJETO.pdf)
 * Documentação da API ⚙️🔨
 * [Introdução e Metodologia](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/INTRODUCAO-DO-PROJETO.pdf)
 * Artigo do TCC (Sendo elaborada) ⚙️🔨
