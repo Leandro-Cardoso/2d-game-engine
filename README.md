@@ -20,6 +20,10 @@ gráficas.
 
 **Palavras-chave:** game engine; C++; arquitetura de software; jogos 2D; desempenho.
 
+## Documentos para Praticas Extensionistas Integradoras VI:
+
+* [Documento do projeto](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/PEI-DESENVOLVIMENNTO-DE-GAME-ENGINE-2D-EM-CPP.pdf)
+
 ## Documentos
 
 * Especificação de Requisitos (SRS) ⚙️🔨
