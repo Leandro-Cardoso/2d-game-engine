@@ -26,7 +26,7 @@ gráficas.
 
 ## Documentos
 
-* Especificação de Requisitos (SRS) ⚙️🔨
+* [Documento de Requisitos](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/DOCUMENTO-DE-REQUISITOS.pdf) ⚙️🔨
 * Documento de Arquitetura de Software (SAD) ⚙️🔨
 * Documentação da API ⚙️🔨
 * [Plano de Gerenciamento do Projeto (PGP)](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/PLANO-DE-GERENCIAMENTO-DO-PROJETO.pdf)
@@ -47,7 +47,7 @@ Em desenvolvimento.
 
 * Elaboração do Plano de Gerenciamento. ✓
 * Definição da arquitetura inicial.
-* Levantamento de requisitos.
+* Levantamento de requisitos. ✓
 
 ### Fase 2 - Medelagem arquitetural
 
