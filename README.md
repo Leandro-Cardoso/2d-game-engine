@@ -26,11 +26,11 @@ gráficas.
 
 ## Documentos
 
-* [Documento de Requisitos](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/DOCUMENTO-DE-REQUISITOS.pdf) ⚙️🔨
-* Documento de Arquitetura de Software ⚙️🔨
+* [Documento de Requisitos](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/DOCUMENTO-DE-REQUISITOS.pdf)
+* [Documento de Arquitetura de Software](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/DOCUMENTO-DE-ARQUITETURA-DE-SOFTWARE.pdf)
 * [Plano de Gerenciamento do Projeto](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/PLANO-DE-GERENCIAMENTO-DO-PROJETO.pdf)
-* Documentação da API ⚙️🔨
 * [Introdução e Metodologia](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/INTRODUCAO-DO-PROJETO.pdf)
+* Documentação ⚙️🔨
 * Artigo do TCC (Sendo elaborada) ⚙️🔨
 
 ## Builds
@@ -117,13 +117,13 @@ Em desenvolvimento.
 
 ## Fases de Desenvolvimento
 
-### Fase 1 - Planejamento formal:
+###  ✓ Fase 1 - Planejamento formal: (completa)
 
-* Elaboração do Plano de Gerenciamento. ✓
-* Definição da arquitetura inicial.
-* Levantamento de requisitos. ✓
+*  ✓ - Elaboração do Plano de Gerenciamento.
+*  ✓ - Definição da arquitetura inicial.
+*  ✓ - Levantamento de requisitos.
 
-### Fase 2 - Medelagem arquitetural
+### ⚙️ Fase 2 - Medelagem arquitetural (atual)
 
 * Modelagem UML (classes e modulos).
 * Definição de responsabilidades.
