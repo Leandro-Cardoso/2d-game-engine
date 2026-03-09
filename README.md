@@ -123,13 +123,13 @@ Em desenvolvimento.
 *  ✓ - Definição da arquitetura inicial.
 *  ✓ - Levantamento de requisitos.
 
-### ⚙️ Fase 2 - Medelagem arquitetural (atual)
+### ✓ Fase 2 - Medelagem arquitetural (atual)
 
-* Modelagem UML (classes e modulos).
-* Definição de responsabilidades.
-* Estruturação dos pacotes da biblioteca.
+* ✓ Modelagem UML (classes e modulos).
+* ✓ Definição de responsabilidades.
+* ✓ Estruturação dos pacotes da biblioteca.
 
-### Fase 3 - Implementação do Núcleo (core)
+### ⚙️ Fase 3 - Implementação do Núcleo (core)
 
 * Estrutura base do projeto.
 * Loop principal.
