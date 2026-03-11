@@ -165,7 +165,7 @@ Em desenvolvimento.
 * Testes de desempenho.
 * Correção de inconsistencias.
 
-### Fase 9 - 
+### Fase 9 - Documentação Final
 
 * Revisão do TCC.
 * Consolidação de diagramas.
