@@ -1,0 +1,22 @@
+---
+layout: default
+title: Getting Started
+---
+
+<h2>Visão Geral do Sistema</h2>
+
+<p>A <strong>2D Game Engine</strong> utiliza uma arquitetura baseada em barramento de eventos para desacoplamento de sistemas.</p>
+
+<div class="note">
+    <strong>Nota de Performance:</strong> O gerenciamento de memória para as Entidades é feito via Object Pooling para evitar fragmentação no Heap.
+</div>
+
+<h3>Exemplo de Código (C++)</h3>
+
+<pre>
+    <code class="language-cpp">
+        // Inicializando o Logger da Engine
+        Log::Init();
+        CORE_INFO("Engine Iniciada com sucesso!");
+    </code>
+</pre>
