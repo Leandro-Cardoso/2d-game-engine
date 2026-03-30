@@ -143,6 +143,18 @@ ul {
     list-style-type: none;
 }
 
+/* Nav */
+.sidebar {
+    min-width: 500px;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+}
+
 /*  */
 .wrapper {
     display: flex;
