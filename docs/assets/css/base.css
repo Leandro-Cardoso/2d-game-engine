@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'JetBrainsMono';
-    src: url('../assets/fonts/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'JetBrainsMono';
-    src: url('../assets/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/JetBrainsMono-Italic-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'PressStart2P';
-    src: url('../assets/fonts/PressStart2P-Regular.ttf') format('truetype');
+    src: url('../fonts/PressStart2P-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

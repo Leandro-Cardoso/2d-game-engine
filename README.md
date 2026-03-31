@@ -2,7 +2,7 @@
 
 ## Resumo
 
-Este trabalho apresenta o desenvolvimento de uma game engine 2D implementada em
+Está documentação apresenta o desenvolvimento de uma game engine 2D implementada em
 C++, destinada à criação de jogos baseados em tiles com visão top-down. O projeto tem
 como objetivo estruturar uma arquitetura modular e performática, minimizando a
 dependência de bibliotecas externas e proporcionando maior controle sobre
@@ -19,6 +19,8 @@ acadêmico em arquitetura de software e otimização de desempenho em aplicaçõ
 gráficas.
 
 **Palavras-chave:** game engine; C++; arquitetura de software; jogos 2D; desempenho.
+
+### [➤ Abrir Documentação](https://leandro-cardoso.github.io/2d-game-engine/)
 
 ## Documentos para Praticas Extensionistas Integradoras VI:
 

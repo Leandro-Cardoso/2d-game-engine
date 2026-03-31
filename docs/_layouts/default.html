@@ -18,11 +18,12 @@
         <main class="content">
             <h1>{{ page.title }}</h1>
             {{ content }}
+            {% include footer.html %}
         </main>
 
     </div>
 
-    {% include footer.html %}
+    <script src="{{ '/assets/js/toggles.js' | relative_url }}"></script>
     
 </body>
 </html>

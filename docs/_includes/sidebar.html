@@ -1,65 +1,70 @@
-<h3>Visão Geral do Sistema</h3>
-
 <ul>
-    <li><a href="/">Resumo</a></li>
-    <li><a href="/">Requisitos</a></li>
-    <li><a href="/">Arquitetura</a></li>
-    <li><a href="/">Gerenciamento do Projeto</a></li>
-    <li><a href="/">Getting Started (Começando)</a></li>
-</ul>
-
-<h3>Core (Núcleo da Engine)</h3>
-
-<ul>
-    <li><a href="/">aaa</a></li>
-    <li><a href="/">bbb</a></li>
-    <li><a href="/">ccc</a></li>
-</ul>
-
-<h3>Renderer (Sistema de Renderização)</h3>
-
-<ul>
-    <li><a href="/">aaa</a></li>
-    <li><a href="/">bbb</a></li>
-    <li><a href="/">ccc</a></li>
-</ul>
-
-<h3>Entity System (Sistema de Entidades)</h3>
-
-<ul>
-    <li><a href="/">aaa</a></li>
-    <li><a href="/">bbb</a></li>
-    <li><a href="/">ccc</a></li>
-</ul>
-
-<h3>Collision System (Sistema de Colisão)</h3>
-
-<ul>
-    <li><a href="/">aaa</a></li>
-    <li><a href="/">bbb</a></li>
-    <li><a href="/">ccc</a></li>
-</ul>
-
-<h3>Input System (Sistema de Entrada)</h3>
-
-<ul>
-    <li><a href="/">aaa</a></li>
-    <li><a href="/">bbb</a></li>
-    <li><a href="/">ccc</a></li>
-</ul>
-
-<h3>Resource Manager (Gerenciador de Recursos)</h3>
-
-<ul>
-    <li><a href="/">aaa</a></li>
-    <li><a href="/">bbb</a></li>
-    <li><a href="/">ccc</a></li>
-</ul>
-
-<h3>Scene Manager (Gerenciador de Cenas)</h3>
-
-<ul>
-    <li><a href="/">aaa</a></li>
-    <li><a href="/">bbb</a></li>
-    <li><a href="/">ccc</a></li>
+    <li>
+        <a href="">
+            <h3>Visão Geral do Sistema</h3>
+        </a>
+        <ul >
+            <li><a href="{{ '/' | relative_url }}">Resumo</a></li>
+            <li><a href="{{ '/' | relative_url }}">Requisitos</a></li>
+            <li><a href="{{ '/' | relative_url }}">Arquitetura</a></li>
+            <li><a href="{{ '/' | relative_url }}">Gerenciamento do Projeto</a></li>
+            <li><a href="{{ '/' | relative_url }}">Getting Started (Começando)</a></li>
+        </ul>
+    </li>
+    <li>
+        <h3 onclick="toggleDisplay('core-list')">Core (Núcleo da Engine)</h3>
+        <ul id="core-list">
+            <li><a href="{{ '/' | relative_url }}">aaa</a></li>
+            <li><a href="{{ '/' | relative_url }}">bbb</a></li>
+            <li><a href="{{ '/' | relative_url }}">ccc</a></li>
+        </ul>
+    </li>
+    <li>
+        <h3 onclick="toggleDisplay('renderer-list')">Renderer (Sistema de Renderização)</h3>
+        <ul id="renderer-list">
+            <li><a href="{{ '/' | relative_url }}">aaa</a></li>
+            <li><a href="{{ '/' | relative_url }}">bbb</a></li>
+            <li><a href="{{ '/' | relative_url }}">ccc</a></li>
+        </ul>
+    </li>
+    <li>
+        <h3 onclick="toggleDisplay('entity-list')">Entity System (Sistema de Entidades)</h3>
+        <ul id="entity-list">
+            <li><a href="{{ '/' | relative_url }}">aaa</a></li>
+            <li><a href="{{ '/' | relative_url }}">bbb</a></li>
+            <li><a href="{{ '/' | relative_url }}">ccc</a></li>
+        </ul>
+    </li>
+    <li>
+        <h3 onclick="toggleDisplay('collision-list')">Collision System (Sistema de Colisão)</h3>
+        <ul id="collision-list">
+            <li><a href="{{ '/' | relative_url }}">aaa</a></li>
+            <li><a href="{{ '/' | relative_url }}">bbb</a></li>
+            <li><a href="{{ '/' | relative_url }}">ccc</a></li>
+        </ul>
+    </li>
+    <li>
+        <h3 onclick="toggleDisplay('input-list')">Input System (Sistema de Entrada)</h3>
+        <ul id="input-list">
+            <li><a href="{{ '/' | relative_url }}">aaa</a></li>
+            <li><a href="{{ '/' | relative_url }}">bbb</a></li>
+            <li><a href="{{ '/' | relative_url }}">ccc</a></li>
+        </ul>
+    </li>
+    <li>
+        <h3 onclick="toggleDisplay('resource-list')">Resource Manager (Gerenciador de Recursos)</h3>
+        <ul id="resource-list">
+            <li><a href="{{ '/' | relative_url }}">aaa</a></li>
+            <li><a href="{{ '/' | relative_url }}">bbb</a></li>
+            <li><a href="{{ '/' | relative_url }}">ccc</a></li>
+        </ul>
+    </li>
+    <li>
+        <h3 onclick="toggleDisplay('scene-list')">Scene Manager (Gerenciador de Cenas)</h3>
+        <ul id="scene-list">
+            <li><a href="{{ '/' | relative_url }}">aaa</a></li>
+            <li><a href="{{ '/' | relative_url }}">bbb</a></li>
+            <li><a href="{{ '/' | relative_url }}">ccc</a></li>
+        </ul>
+    </li>
 </ul>
