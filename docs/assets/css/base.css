@@ -62,11 +62,18 @@ body {
     padding: var(--spacing) 0;
 }
 
+/* Title */
+h1 {
+    font-size: 2em;
+    font-weight: bolder;
+    color: var(--color-primary);
+}
+
 /* Main */
 main {
     display: flex;
     flex-direction: column;
     gap: var(--spacing);
 
-    padding-right: var(--spacing);
+    padding: var(--spacing) calc(var(--spacing) * 2) var(--spacing) var(--spacing);
 }
