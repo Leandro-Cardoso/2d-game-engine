@@ -1,0 +1,32 @@
+
+<div class="search-bar">
+    <form id="search-form">
+        <input type="text" name="search" placeholder="Search..." id="search-input">
+        <button type="submit" disabled>
+            <img src="{{ '/assets/svg/search.svg' | relative_url }}" alt="Search">
+        </button>
+    </form>
+</div>
+
+<!-- TODO: CONFIGURAR BUSCA.
+<ul id="results-container"></ul>
+
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+
+<script>
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: 'search.json',
+        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+        noResultsText: 'Nenhum resultado encontrado',
+        limit: 10,
+        fuzzy: false
+    });
+
+    // Impede o formulário de dar "refresh" na página ao apertar Enter
+    document.getElementById('search-form').onsubmit = function(e) {
+        e.preventDefault();
+    };
+</script>
+-->

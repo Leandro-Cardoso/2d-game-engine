@@ -1,0 +1,51 @@
+/* Base */
+.search-bar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    background-color: var(--color-background-secundary);
+    padding: 12px;
+}
+
+/* Input */
+.search-bar input {
+    flex: 1;
+
+    border: none;
+    max-width: 500px;
+    padding: 8px 12px;
+    background-color: var(--color-background-tertiary);
+
+    color: var(--color-text);
+    font-size: 14px;
+}
+.search-bar input:focus {
+    outline: 2px solid var(--color-primary);
+}
+
+/* Button */
+.search-bar button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding: 8px 12px;
+    background-color: var(--color-primary);
+
+    color: var(--color-background-secundary);
+    font-weight: bolder;
+
+    transition: outline 0.3s;
+}
+.search-bar button:hover {
+    outline: 2px solid var(--color-primary);
+}
+.search-bar button img {
+    height: 100%;
+}
