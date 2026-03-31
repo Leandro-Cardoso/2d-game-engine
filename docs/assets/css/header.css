@@ -11,12 +11,12 @@ header {
     
     width: 100%;
     padding: 16px 32px;
-    background-color: #ffa600;
+    background-color: var(--color-primary);
 }
 
 /* Title */
 header h1 {
-    color: #121212;
+    color: var(--color-background-secundary);
     font-family: 'Orbitron', sans-serif;
     font-size: 24px;
     font-weight: bolder;
@@ -25,7 +25,7 @@ header h1 {
 
 /* Version */
 header span {
-    color: #121212;
+    color: var(--color-background-secundary);
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
