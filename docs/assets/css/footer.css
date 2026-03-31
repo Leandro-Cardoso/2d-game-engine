@@ -1,0 +1,56 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #ffa600;
+}
+
+/* Base */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-bottom: 4px solid #ffa600;
+    width: 100%;
+    padding: 12px 32px;
+    background-color: #121212;
+}
+
+/* Navigation */
+footer a {
+    color: #ffa600;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    transition: color 0.3s;
+}
+footer a:hover {
+    color: #fff;
+}
+
+/* Copyright */
+footer p {
+    color: #ffa600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* Version */
+footer span {
+    color: #ffa600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
