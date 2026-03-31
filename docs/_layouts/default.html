@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/header.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/search.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/sidebar.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/footer.css' | relative_url }}">
 </head>
 <body>
@@ -21,10 +22,8 @@
     <!-- Main Section -->
     <section class="main-section">
 
-        <!-- Side Nav -->
-        <nav class="sidebar">
-            {% include sidebar.html %}
-        </nav>
+        <!-- Sidebar -->
+        {% include sidebar.html %}
 
         <!-- Content -->
         <main class="content">

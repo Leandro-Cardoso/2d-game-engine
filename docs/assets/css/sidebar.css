@@ -1,0 +1,49 @@
+/* Base */
+aside {
+    width: 350px;
+    padding: 16px 0;
+}
+aside > nav > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Navigation */
+.link-group-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-left: 4px solid var(--color-primary);
+    padding: 12px 16px;
+    background-color: var(--color-background-secundary);
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-text);
+
+    transition: color 0.3s;
+}
+.link-group-title:hover {
+    color: var(--color-primary);
+}
+
+/* Navigation items */
+[id^="link-group-"] a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 12px 8px 32px;
+    background-color: var(--color-background-tertiary);
+
+    font-size: 14px;
+    color: var(--color-text);
+
+    transition: color 0.3s;
+}
+[id^="link-group-"] a:hover {
+    color: var(--color-primary);
+}

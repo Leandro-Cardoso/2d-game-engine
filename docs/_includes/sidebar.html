@@ -1,70 +1,175 @@
-<ul>
-    <li>
-        <a href="">
-            <h3>Visão Geral do Sistema</h3>
-        </a>
-        <ul >
-            <li><a href="{{ '/' | relative_url }}">Resumo</a></li>
-            <li><a href="{{ '/' | relative_url }}">Requisitos</a></li>
-            <li><a href="{{ '/' | relative_url }}">Arquitetura</a></li>
-            <li><a href="{{ '/' | relative_url }}">Gerenciamento do Projeto</a></li>
-            <li><a href="{{ '/' | relative_url }}">Getting Started (Começando)</a></li>
+
+<aside>
+    <nav>
+        <ul>
+            <li>
+                <div class="link-group-title" onclick="toggleDisplay('link-group-01')">
+                    <span>Visão Geral</span>
+                    <span>1</span>
+                </div>
+                <ul id="link-group-01">
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>Resumo</span>
+                        <span>1.01</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>Requisitos</span>
+                        <span>1.02</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>Arquitetura</span>
+                        <span>1.03</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>Gerenciamento do Projeto</span>
+                        <span>1.04</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>Getting Started (Começando)</span>
+                        <span>1.05</span>
+                    </a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link-group-title" onclick="toggleDisplay('link-group-02')">
+                    <span>Core (Núcleo da Engine)</span>
+                    <span>2</span>
+                </div>
+                <ul id="link-group-02">
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste d</span>
+                        <span>2.01</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste e</span>
+                        <span>2.02</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste f</span>
+                        <span>2.03</span>
+                    </a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link-group-title" onclick="toggleDisplay('link-group-03')">
+                    <span>Renderer (Sistema de Renderização)</span>
+                    <span>3</span>
+                </div>
+                <ul id="link-group-03">
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste g</span>
+                        <span>3.01</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste h</span>
+                        <span>3.02</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste i</span>
+                        <span>3.03</span>
+                    </a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link-group-title" onclick="toggleDisplay('link-group-04')">
+                    <span>Entity System (Sistema de Entidades)</span>
+                    <span>4</span>
+                </div>
+                <ul id="link-group-04">
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste j</span>
+                        <span>4.01</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste k</span>
+                        <span>4.02</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste l</span>
+                        <span>4.03</span>
+                    </a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link-group-title" onclick="toggleDisplay('link-group-05')">
+                    <span>Collision System (Sistema de Colisão)</span>
+                    <span>5</span>
+                </div>
+                <ul id="link-group-05">
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste m</span>
+                        <span>5.01</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste n</span>
+                        <span>5.02</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste o</span>
+                        <span>5.03</span>
+                    </a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link-group-title" onclick="toggleDisplay('link-group-06')">
+                    <span>Input System (Sistema de Entrada)</span>
+                    <span>6</span>
+                </div>
+                <ul id="link-group-06">
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste p</span>
+                        <span>6.01</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste q</span>
+                        <span>6.02</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste r</span>
+                        <span>6.03</span>
+                    </a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link-group-title" onclick="toggleDisplay('link-group-07')">
+                    <span>Resource Manager (Gerenciador de Recursos)</span>
+                    <span>7</span>
+                </div>
+                <ul id="link-group-07">
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste s</span>
+                        <span>7.01</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste t</span>
+                        <span>7.02</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste u</span>
+                        <span>7.03</span>
+                    </a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link-group-title" onclick="toggleDisplay('link-group-08')">
+                    <span>Scene Manager (Gerenciador de Cenas)</span>
+                    <span>8</span>
+                </div>
+                <ul id="link-group-08">
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste v</span>
+                        <span>8.01</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste w</span>
+                        <span>8.02</span>
+                    </a></li>
+                    <li><a href="{{ '/' | relative_url }}">
+                        <span>teste x</span>
+                        <span>8.03</span>
+                    </a></li>
+                </ul>
+            </li>
         </ul>
-    </li>
-    <li>
-        <h3 onclick="toggleDisplay('core-list')">Core (Núcleo da Engine)</h3>
-        <ul id="core-list">
-            <li><a href="{{ '/' | relative_url }}">aaa</a></li>
-            <li><a href="{{ '/' | relative_url }}">bbb</a></li>
-            <li><a href="{{ '/' | relative_url }}">ccc</a></li>
-        </ul>
-    </li>
-    <li>
-        <h3 onclick="toggleDisplay('renderer-list')">Renderer (Sistema de Renderização)</h3>
-        <ul id="renderer-list">
-            <li><a href="{{ '/' | relative_url }}">aaa</a></li>
-            <li><a href="{{ '/' | relative_url }}">bbb</a></li>
-            <li><a href="{{ '/' | relative_url }}">ccc</a></li>
-        </ul>
-    </li>
-    <li>
-        <h3 onclick="toggleDisplay('entity-list')">Entity System (Sistema de Entidades)</h3>
-        <ul id="entity-list">
-            <li><a href="{{ '/' | relative_url }}">aaa</a></li>
-            <li><a href="{{ '/' | relative_url }}">bbb</a></li>
-            <li><a href="{{ '/' | relative_url }}">ccc</a></li>
-        </ul>
-    </li>
-    <li>
-        <h3 onclick="toggleDisplay('collision-list')">Collision System (Sistema de Colisão)</h3>
-        <ul id="collision-list">
-            <li><a href="{{ '/' | relative_url }}">aaa</a></li>
-            <li><a href="{{ '/' | relative_url }}">bbb</a></li>
-            <li><a href="{{ '/' | relative_url }}">ccc</a></li>
-        </ul>
-    </li>
-    <li>
-        <h3 onclick="toggleDisplay('input-list')">Input System (Sistema de Entrada)</h3>
-        <ul id="input-list">
-            <li><a href="{{ '/' | relative_url }}">aaa</a></li>
-            <li><a href="{{ '/' | relative_url }}">bbb</a></li>
-            <li><a href="{{ '/' | relative_url }}">ccc</a></li>
-        </ul>
-    </li>
-    <li>
-        <h3 onclick="toggleDisplay('resource-list')">Resource Manager (Gerenciador de Recursos)</h3>
-        <ul id="resource-list">
-            <li><a href="{{ '/' | relative_url }}">aaa</a></li>
-            <li><a href="{{ '/' | relative_url }}">bbb</a></li>
-            <li><a href="{{ '/' | relative_url }}">ccc</a></li>
-        </ul>
-    </li>
-    <li>
-        <h3 onclick="toggleDisplay('scene-list')">Scene Manager (Gerenciador de Cenas)</h3>
-        <ul id="scene-list">
-            <li><a href="{{ '/' | relative_url }}">aaa</a></li>
-            <li><a href="{{ '/' | relative_url }}">bbb</a></li>
-            <li><a href="{{ '/' | relative_url }}">ccc</a></li>
-        </ul>
-    </li>
-</ul>
+    </nav>
+</aside>
