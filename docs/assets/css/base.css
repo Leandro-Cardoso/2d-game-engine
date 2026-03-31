@@ -146,6 +146,7 @@ ul {
 /* Nav */
 .sidebar {
     min-width: 500px;
+    background-color: var(--color-background-secundary);
 }
 
 /* Main */

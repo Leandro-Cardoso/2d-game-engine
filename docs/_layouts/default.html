@@ -6,8 +6,12 @@
     <title>Game Engine Docs</title>
 
     <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/header.css' | relative_url }}">
 </head>
 <body>
+
+    <!-- Header -->
+    {% include headeer.html %}
 
     <div class="wrapper">
 
@@ -22,6 +26,9 @@
         </main>
 
     </div>
+
+    <!-- Footer -->
+    {% include footer.html %}
 
     <script src="{{ '/assets/js/toggles.js' | relative_url }}"></script>
     

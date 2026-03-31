@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/orbitron/Orbitron-ExtraBold.ttf') format('truetype');
+}
+
+/* Base */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    padding: 16px 32px;
+    background-color: #ffa600;
+}
+
+/* Title */
+header h1 {
+    color: #121212;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+/* Version */
+header span {
+    color: #121212;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
