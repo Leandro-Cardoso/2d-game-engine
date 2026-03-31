@@ -1,4 +1,4 @@
 title: Game Engine Documentation
 description: Documentação técnica da Game Engine.
-baseurl: ""
-url: "https://leandro-cardoso.github.io/2d-game-engine"
+baseurl: "/2d-game-engine"
+url: "https://leandro-cardoso.github.io"
