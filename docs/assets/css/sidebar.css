@@ -1,5 +1,7 @@
 /* Base */
 aside {
+    flex-shrink: 0;
+    
     width: 500px;
 }
 aside > nav > ul {

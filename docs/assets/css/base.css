@@ -79,6 +79,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: var(--spacing);
+    flex: 1;
 
+    min-width: 0;
     padding: var(--spacing) calc(var(--spacing) * 2) var(--spacing) var(--spacing);
 }

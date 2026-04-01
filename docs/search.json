@@ -3,15 +3,15 @@ layout: none
 ---
 
 [
-    {%- assign filtered_pages = site.pages | where_exp: "item", "item.title and item.category and item.searchable == true" -%}
-
     {% for page in filtered_pages %}
-        {
-            "category" : "{{ page.category }}",
-            "title"    : "{{ page.title | escape }}",
-            "tags"     : "{{ page.tags | join: ', ' }}",
-            "url"      : "{{ page.url | relative_url }}",
-            "content"  : "{{ page.content | strip_html | strip_newlines | escape }}"
-        } {% unless forloop.last %},{% endunless %}
+        {% if searchable %}
+            {
+                "category" : "{{ page.category }}",
+                "title"    : "{{ page.title | escape }}",
+                "tags"     : "{{ page.tags | join: ', ' }}",
+                "url"      : "{{ page.url | relative_url }}",
+                "content"  : "{{ page.content | strip_html | strip_newlines | escape }}"
+            } {% unless forloop.last %},{% endunless %}
+        {% endif %}
     {% endfor %}
 ]
