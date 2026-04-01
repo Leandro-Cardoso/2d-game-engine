@@ -2,7 +2,7 @@
 aside {
     flex-shrink: 0;
 
-    width: 450px;
+    width: 400px;
 }
 aside > nav > ul {
     display: flex;
