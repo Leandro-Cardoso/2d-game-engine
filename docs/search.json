@@ -3,7 +3,7 @@ layout: none
 ---
 
 [
-    {%- assign filtered_pages = site.pages | filter: "title" | filter: "category" -%}
+    {%- assign filtered_pages = site.pages | where_exp: "item", "item.title and item.category and item.searchable == true" -%}
 
     {% for page in filtered_pages %}
         {
