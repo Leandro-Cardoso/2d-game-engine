@@ -4,7 +4,7 @@ layout: none
 
 [
     {% for page in filtered_pages %}
-        {% if searchable %}
+        {% if page.searchable != false %}
             {
                 "category" : "{{ page.category }}",
                 "title"    : "{{ page.title | escape }}",
