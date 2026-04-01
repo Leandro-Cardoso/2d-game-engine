@@ -1,8 +1,8 @@
 /* Base */
 aside {
     flex-shrink: 0;
-    
-    width: 500px;
+
+    width: 450px;
 }
 aside > nav > ul {
     display: flex;

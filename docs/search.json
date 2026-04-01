@@ -4,7 +4,7 @@ searchable: false
 ---
 
 [
-    {% for page in filtered_pages %}
+    {% for page in site.pages %}
         {% if page.searchable == true %}
             {
                 "category" : "{{ page.category }}",
