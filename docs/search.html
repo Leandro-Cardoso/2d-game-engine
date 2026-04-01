@@ -1,0 +1,36 @@
+---
+layout: default
+title: Resultados da Busca
+---
+
+<h2>Resultados para: <span id="search-query"></span></h2>
+
+<ul id="search-results"></ul>
+
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+
+<script>
+
+    // Pega a query "q" da URL:
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchTerm = urlParams.get('q');
+
+    if (searchTerm) {
+        document.getElementById('search-query').textContent = searchTerm;
+
+        // Fazer busca usando o search.json:
+        const sjs = SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'), // Pode ser um input oculto ou o mesmo da busca
+            resultsContainer: document.getElementById('search-results'),
+            json: "{{ '/search.json' | relative_url }}",
+            searchResultTemplate: '<li><a href="{url}"><h3>{title}</h3></a><p>{content}</p></li>',
+            noResultsText: 'Nenhum resultado encontrado para "' + searchTerm + '"'
+        });
+
+        // Força a busca a rodar com o termo da URL após carregar o JSON:
+        setTimeout(() => {
+            sjs.search(searchTerm);
+        }, 500);
+    }
+
+</script>
