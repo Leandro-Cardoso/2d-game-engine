@@ -67,6 +67,7 @@ h1 {
     font-size: 2em;
     font-weight: bolder;
     color: var(--color-primary);
+    text-align: center;
 }
 h2 {
     font-size: 1.7em;
