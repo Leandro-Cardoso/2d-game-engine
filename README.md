@@ -24,14 +24,14 @@ gráficas.
 
 ## Documentos para Praticas Extensionistas Integradoras VI:
 
-* [Documento do projeto](https://github.com/Leandro-Cardoso/2d-game-engine/docs/assets/pdf/blob/main/docs/PEI-DESENVOLVIMENNTO-DE-GAME-ENGINE-2D-EM-CPP.pdf)
+* [Documento do projeto](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/PEI-DESENVOLVIMENNTO-DE-GAME-ENGINE-2D-EM-CPP.pdf)
 
 ## Documentos
 
-* [Documento de Requisitos](https://github.com/Leandro-Cardoso/2d-game-engine/docs/assets/pdf/blob/main/docs/DOCUMENTO-DE-REQUISITOS.pdf)
-* [Documento de Arquitetura de Software](https://github.com/Leandro-Cardoso/2d-game-engine/docs/assets/pdf/blob/main/docs/DOCUMENTO-DE-ARQUITETURA-DE-SOFTWARE.pdf)
-* [Plano de Gerenciamento do Projeto](https://github.com/Leandro-Cardoso/2d-game-engine/docs/assets/pdf/blob/main/docs/PLANO-DE-GERENCIAMENTO-DO-PROJETO.pdf)
-* [Introdução e Metodologia](https://github.com/Leandro-Cardoso/2d-game-engine/docs/assets/pdf/blob/main/docs/INTRODUCAO-DO-PROJETO.pdf)
+* [Documento de Requisitos](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/DOCUMENTO-DE-REQUISITOS.pdf)
+* [Documento de Arquitetura de Software](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/DOCUMENTO-DE-ARQUITETURA-DE-SOFTWARE.pdf)
+* [Plano de Gerenciamento do Projeto](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/PLANO-DE-GERENCIAMENTO-DO-PROJETO.pdf)
+* [Introdução e Metodologia](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/INTRODUCAO-DO-PROJETO.pdf)
 * Documentação ⚙️🔨
 * Artigo do TCC (Sendo elaborada) ⚙️🔨
 
