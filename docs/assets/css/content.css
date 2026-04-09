@@ -1,3 +1,17 @@
+/* Link */
+.content a {
+    color: var(--color-secundary);
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: color 0.3s;
+}
+.content a:hover {
+    color: var(--color-primary);
+}
+
+/* List */
 .content ul {
     display: flex;
     flex-direction: column;
@@ -6,8 +20,15 @@
     list-style-type: square;
     margin-left: var(--spacing);
 }
+.content ul li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+}
 
+/* Image */
 .content img {
     background-color: #fff;
     border-radius: var(--spacing);
+    padding: var(--spacing);
 }
