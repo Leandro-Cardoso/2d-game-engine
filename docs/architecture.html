@@ -1,0 +1,106 @@
+---
+layout: default
+category: Visão Geral
+title: Arquitetura
+tags: arquitetura, architecture, software, aplicacao, application, projeto, project
+url: /architecture.html
+---
+
+<p>
+    A arquitetura proposta foi projetada com foco em modularidade, organização estrutural e facilidade de manutenção, permitindo que diferentes partes do sistema sejam desenvolvidas e evoluídas de forma independente. 
+</p>
+<p>
+    são apresentados os elementos estruturais que compõem o núcleo do sistema, incluindo gerenciamento do loop principal do jogo, renderização gráfica, gerenciamento de entidades, controle de entrada do usuário, gerenciamento de recursos e sistema de colisões. 
+</p>
+<p>
+    A definição clara da arquitetura do sistema contribui para orientar o desenvolvimento da engine, facilitar a compreensão de sua estrutura e apoiar futuras extensões ou melhorias.
+</p>
+<p>
+    A engine é composta por um conjunto de módulos responsáveis por diferentes aspectos do funcionamento do sistema. Cada módulo possui responsabilidades específicas e interage com os demais componentes de maneira estruturada, garantindo que o fluxo de execução do jogo ocorra de forma consistente.
+</p>
+
+<h2>Componentes</h2>
+
+<ul>
+    <li>
+        <strong>Core (Núcleo da Engine)</strong>
+        <span>
+            Responsável pela inicialização do sistema, gerenciamento do ciclo de execução e coordenação geral dos módulos da engine.
+        </span>
+    </li>
+    <li>
+        <strong>Renderer (Sistema de Renderização)</strong>
+        <span>
+            Responsável pela renderização de elementos gráficos bidimensionais na tela, incluindo sprites e outros componentes visuais utilizados no jogo.
+        </span>
+    </li>
+    <li>
+        <strong>Entity System (Sistema de Entidades)</strong>
+        <span>
+            Responsável pelo gerenciamento das entidades presentes no ambiente do jogo, permitindo a criação, atualização e remoção de objetos durante a execução. 
+        </span>
+    </li>
+    <li>
+        <strong>Collision System (Sistema de Colisão)</strong>
+        <span>
+            Responsável pela detecção de colisões entre entidades, permitindo que interações físicas ou lógicas sejam processadas pelo sistema.
+        </span>
+    </li>
+    <li>
+        <strong>Input System (Sistema de Entrada)</strong>
+        <span>
+            Responsável por capturar e processar eventos de entrada do usuário provenientes de dispositivos como teclado e mouse.
+        </span>
+    </li>
+    <li>
+        <strong>Resource Manager (Gerenciador de Recursos)</strong>
+        <span>
+            Responsável pelo carregamento, armazenamento e gerenciamento de recursos utilizados pela aplicação, como imagens e arquivos de mapa.
+        </span>
+    </li>
+    <li>
+        <strong>Scene Manager (Gerenciador de Cenas)</strong>
+        <span>
+            Responsável pela organização do jogo em diferentes estados ou cenas, permitindo a transição entre diferentes contextos da aplicação.
+        </span>
+    </li>
+</ul>
+
+<h2>Camadas</h2>
+
+<ul>
+    <li>
+        <strong>Core Layer (Núcleo do Sistema)</strong>
+        <span>
+            Responsável pela inicialização da engine, gerenciamento do ciclo de execução do jogo e coordenação geral dos módulos do sistema.
+        </span>
+    </li>
+    <li>
+        <strong>System Layer (Camada de Sistemas)</strong>
+        <span>
+            Composta pelos módulos responsáveis por funcionalidades específicas da engine, como renderização gráfica, gerenciamento de entidades, sistema de colisão, processamento de entrada do usuário e gerenciamento de recursos.
+        </span>
+    </li>
+    <li>
+        <strong>Application Layer (Camada de Aplicação)</strong>
+        <span>
+            Representa o código do jogo desenvolvido pelo usuário da engine, que utiliza os serviços fornecidos pelos módulos internos do sistema.
+        </span>
+    </li>
+</ul>
+
+<h2>Diagramas</h2>
+
+<h3>Diagrama de Caso de Uso</h3>
+
+<img src="{{ '/assets/png/DIAGRAMA-DE-CASO-DE-USO.png' | relative_url }}" alt="Diagrama de Caso de Uso">
+
+<h3>Diagrama de Sequência</h3>
+
+<img src="{{ '/assets/png/DIAGRAMA-DE-SEQUENCIA.png' | relative_url }}" alt="Diagrama de Sequência">
+
+<h3>Diagrama de Classe e Relacionamento</h3>
+
+<img src="{{ '/assets/png/DIAGRAMA-DE-CLASSE.png' | relative_url }}" alt="Diagrama de Classe e Relacionamento">
+
+<a href="" target="_blank">Documento de Arquitetura de Software (Completo)</a>
