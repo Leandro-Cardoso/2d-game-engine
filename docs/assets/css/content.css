@@ -1,3 +1,8 @@
+/* Text */
+.content strong {
+    font-weight: bolder;
+}
+
 /* Link */
 .content a {
     color: var(--color-secundary);
@@ -19,11 +24,6 @@
 
     list-style-type: square;
     margin-left: var(--spacing);
-}
-.content ul li {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing);
 }
 
 /* Image */
