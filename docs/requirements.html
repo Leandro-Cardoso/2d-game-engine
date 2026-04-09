@@ -1,0 +1,151 @@
+---
+layout: default
+category: Visão Geral
+title: Requisitos
+tags: requisitos, requirements, software, aplicacao, application, projeto, project, funcionais, nao funcionais, escopo
+url: /requirements.html
+---
+
+<p>
+    Descrição dos requisitos funcionais e não funcionais da engine, estabelecendo as funcionalidades essenciais que deverão ser oferecidas aos desenvolvedores que utilizarem a biblioteca para criação de jogos 2D.
+</p>
+<p>
+    Entre essas funcionalidades estão o gerenciamento do loop principal do jogo, renderização gráfica, gerenciamento de entidades, controle de entrada do usuário, sistema de colisão e organização de cenas.
+</p>
+<p>
+    A especificação de requisitos serve como base para as etapas posteriores do projeto, incluindo a definição da arquitetura do sistema, o planejamento da implementação e a validação das funcionalidades da engine.
+</p>
+
+<h2>Escopo</h2>
+
+<ul>
+    <li>Sistema de renderização 2D</li>
+    <li>Gerenciamento de entidades</li>
+    <li>Sistema de colisão</li>
+    <li>Gerenciamento de recursos (imagens, mapas)</li>
+    <li>Estrutura de loop principal de jogo</li>
+    <li>Controle de entrada (input)</li>
+    <li>Organização modular com foco em performance</li>
+</ul>
+
+<h2>Fora do Escopo</h2>
+
+<ul>
+    <li>Editor gráfico integrado</li>
+    <li>Sistema de física avançado (3D)</li>
+    <li>Interface gráfica para configuração</li>
+</ul>
+
+<h2>Requisitos Funcionais</h2>
+
+<ul>
+    <li>
+        <strong>RF01 – Inicialização da Engine</strong><br>
+        <span>
+            A engine deve permitir a inicialização do sistema através de uma interface de programação que configure os componentes principais necessários para execução do jogo.
+        </span>
+    </li>
+    <li>
+        <strong>RF02 – Gerenciamento do Loop Principal</strong><br>
+        <span>
+            A engine deve fornecer um mecanismo responsável por controlar o loop principal do jogo, incluindo atualização lógica, processamento de entrada e renderização gráfica.
+        </span>
+    </li>
+    <li>
+        <strong>RF03 – Renderização de Elementos Gráficos</strong><br>
+        <span>
+            A engine deve permitir a renderização de sprites e outros elementos gráficos bidimensionais na tela.
+        </span>
+    </li>
+    <li>
+        <strong>RF04 – Gerenciamento de Entidades</strong><br>
+        <span>
+            A engine deve permitir a criação, atualização e remoção de entidades dentro do ambiente do jogo.
+        </span>
+    </li>
+    <li>
+        <strong>RF05 – Sistema de Colisão</strong><br>
+        <span>
+            A engine deve fornecer mecanismos para detecção de colisões entre entidades presentes no ambiente do jogo.
+        </span>
+    </li>
+    <li>
+        <strong>RF06 – Gerenciamento de Recursos</strong><br>
+        <span>
+            A engine deve permitir o carregamento e gerenciamento de recursos utilizados pelo jogo, como imagens e arquivos de mapas.
+        </span>
+    </li>
+    <li>
+        <strong>RF07 – Sistema de Entrada do Usuário</strong><br>
+        <span>
+            A engine deve capturar e processar eventos de entrada do usuário provenientes de dispositivos como teclado e mouse.
+        </span>
+    </li>
+    <li>
+        <strong>RF08 – Estrutura de Cenas</strong><br>
+        <span>
+            A engine deve permitir a organização do jogo em diferentes cenas ou estados, possibilitando a transição entre diferentes contextos do jogo.
+        </span>
+    </li>
+    <li>
+        <strong>RF09 – Atualização de Entidades</strong><br>
+        <span>
+            A engine deve permitir que entidades sejam atualizadas a cada ciclo do loop do jogo, possibilitando o processamento de lógica e comportamento.
+        </span>
+    </li>
+    <li>
+        <strong>RF10 – Encerramento do Sistema</strong><br>
+        <span>
+            A engine deve fornecer mecanismos para encerramento seguro da execução do jogo e liberação adequada dos recursos utilizados.
+        </span>
+    </li>
+</ul>
+
+<h2>Requisitos Não Funcionais</h2>
+
+<ul>
+    <li>
+        <strong>RNF01 – Desempenho</strong><br>
+        <span>
+            A engine deve ser capaz de manter uma taxa mínima de 60 quadros por segundo em condições normais de execução.
+        </span>
+    </li>
+    <li>
+        <strong>RNF02 – Modularidade</strong><br>
+        <span>
+            A arquitetura da engine deve ser organizada de forma modular, permitindo que diferentes componentes do sistema sejam desenvolvidos e mantidos de forma independente.
+        </span>
+    </li>
+    <li>
+        <strong>RNF03 – Manutenibilidade</strong><br>
+        <span>
+            O código-fonte do sistema deve seguir boas práticas de organização e documentação, facilitando sua manutenção e evolução.
+        </span>
+    </li>
+    <li>
+        <strong>RNF04 – Portabilidade</strong><br>
+        <span>
+            A engine deve ser desenvolvida de forma que possa ser executada em diferentes sistemas operacionais compatíveis com compiladores C++ modernos.
+        </span>
+    </li>
+    <li>
+        <strong>RNF05 – Escalabilidade</strong><br>
+        <span>
+            A arquitetura do sistema deve permitir a adição de novos módulos e funcionalidades sem necessidade de alterações estruturais significativas.
+        </span>
+    </li>
+    <li>
+        <strong>RNF06 – Usabilidade da API</strong><br>
+        <span>
+            A API da engine deve apresentar uma interface clara e consistente, facilitando sua utilização por desenvolvedores.
+        </span>
+    </li>
+    <li>
+        <strong>RNF07 – Organização do Código</strong><br>
+        <span>
+            O código da engine deve ser estruturado em módulos ou componentes claramente definidos, com responsabilidades bem delimitadas.
+        </span>
+    </li>
+</ul>
+
+<a href="{{ '/assets/pdf/DOCUMENTO-DE-REQUISITOS.pdf' | relative_url }}" target="_blank">Documento de Requisitos do Sistema (Completo)</a>
