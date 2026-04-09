@@ -1,0 +1,13 @@
+.content ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+
+    list-style-type: square;
+    margin-left: var(--spacing);
+}
+
+.content img {
+    background-color: #fff;
+    border-radius: var(--spacing);
+}
