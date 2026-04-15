@@ -20,20 +20,20 @@ gráficas.
 
 **Palavras-chave:** game engine; C++; arquitetura de software; jogos 2D; desempenho.
 
-### [➤ Abrir Documentação](https://leandro-cardoso.github.io/2d-game-engine/)
+### [➤ Abrir Documentação](https://leandro-cardoso.github.io/2d-game-engine/) ⚙️
 
 ## Documentos para Praticas Extensionistas Integradoras VI:
 
-* [Documento do projeto](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/PEI-DESENVOLVIMENNTO-DE-GAME-ENGINE-2D-EM-CPP.pdf)
+* [Introdução e Metodologia](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/INTRODUCAO-DO-PROJETO.pdf)
+* [Artigo](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/PEI-DESENVOLVIMENNTO-DE-GAME-ENGINE-2D-EM-CPP.pdf)
 
 ## Documentos
 
 * [Documento de Requisitos](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/DOCUMENTO-DE-REQUISITOS.pdf)
 * [Documento de Arquitetura de Software](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/DOCUMENTO-DE-ARQUITETURA-DE-SOFTWARE.pdf)
 * [Plano de Gerenciamento do Projeto](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/PLANO-DE-GERENCIAMENTO-DO-PROJETO.pdf)
-* [Introdução e Metodologia](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/INTRODUCAO-DO-PROJETO.pdf)
-* Documentação ⚙️🔨
-* Artigo do TCC (Sendo elaborada) ⚙️🔨
+* [Documentação](https://leandro-cardoso.github.io/2d-game-engine/) ⚙️
+* Artigo Acadêmico ⚙️
 
 ## Builds
 
@@ -42,6 +42,62 @@ Em desenvolvimento.
 ## Features
 
 Em desenvolvimento.
+
+## Fases de Desenvolvimento
+
+### ⚙️ Fase 3 - Implementação do Núcleo (core)
+
+* ✓ Estrutura base do projeto.
+* Loop principal.
+* Sistema de inicialização.
+
+### Fase 4 - Renderização 2D
+
+* Sistema de tiles.
+* Carregamento de sprites.
+* Renderização em tela.
+
+### Fase 5 - Gerenciamento de Recursos
+
+* Implementação do Resource Manager.
+* Controle de carregamento e descarregamento.
+* Otimização de memoria.
+
+### Fase 6 - Sistema de Entidades
+
+* Criação da classe base Entity.
+* Sistema de atualização.
+* Gerenciamento de multiplas entidades.
+
+### Fase 7 - Sistema de Colisão
+
+* Implementação de bounding box.
+* Verificação de colisão com mapa.
+* Integração com entidades.
+
+### Fase 8 - Testes e Validação
+
+* Criação do prototipo funcional.
+* Testes de desempenho.
+* Correção de inconsistencias.
+
+### ⚙️ Fase 9 - Documentação Final
+
+* Revisão do TCC.
+* Consolidação de diagramas.
+* Preparação para entrega.
+
+###  ✓ Fase 1 - Planejamento formal: (COMPLETO)
+
+*  ✓ - Elaboração do Plano de Gerenciamento.
+*  ✓ - Definição da arquitetura inicial.
+*  ✓ - Levantamento de requisitos.
+
+### ✓ Fase 2 - Medelagem arquitetural (COMPLETO)
+
+* ✓ Modelagem UML (classes e modulos).
+* ✓ Definição de responsabilidades.
+* ✓ Estruturação dos pacotes da biblioteca.
 
 ## Requisitos
 
@@ -116,59 +172,3 @@ Em desenvolvimento.
 * **RNF07** – Organização do Código
 
     O código da engine deve ser estruturado em módulos ou componentes claramente definidos, com responsabilidades bem delimitadas.
-
-## Fases de Desenvolvimento
-
-###  ✓ Fase 1 - Planejamento formal: (completa)
-
-*  ✓ - Elaboração do Plano de Gerenciamento.
-*  ✓ - Definição da arquitetura inicial.
-*  ✓ - Levantamento de requisitos.
-
-### ✓ Fase 2 - Medelagem arquitetural (atual)
-
-* ✓ Modelagem UML (classes e modulos).
-* ✓ Definição de responsabilidades.
-* ✓ Estruturação dos pacotes da biblioteca.
-
-### ⚙️ Fase 3 - Implementação do Núcleo (core)
-
-* Estrutura base do projeto.
-* Loop principal.
-* Sistema de inicialização.
-
-### Fase 4 - Renderização 2D
-
-* Sistema de tiles.
-* Carregamento de sprites.
-* Renderização em tela.
-
-### Fase 5 - Gerenciamento de Recursos
-
-* Implementação do Resource Manager.
-* Controle de carregamento e descarregamento.
-* Otimização de memoria.
-
-### Fase 6 - Sistema de Entidades
-
-* Criação da classe base Entity.
-* Sistema de atualização.
-* Gerenciamento de multiplas entidades.
-
-### Fase 7 - Sistema de Colisão
-
-* Implementação de bounding box.
-* Verificação de colisão com mapa.
-* Integração com entidades.
-
-### Fase 8 - Testes e Validação
-
-* Criação do prototipo funcional.
-* Testes de desempenho.
-* Correção de inconsistencias.
-
-### Fase 9 - Documentação Final
-
-* Revisão do TCC.
-* Consolidação de diagramas.
-* Preparação para entrega.
