@@ -8,13 +8,13 @@ MainMenuScene::MainMenuScene() {
 
 void MainMenuScene::update(InputManager& input) {
 
-    if (input.isKeyPressed(SDL_SCANCODE_DOWN)) {
+    if (input.isKeyJustPressed(SDL_SCANCODE_DOWN)) {
         selectedIndex++;
         if (selectedIndex >= options.size())
             selectedIndex = 0;
     }
 
-    if (input.isKeyPressed(SDL_SCANCODE_UP)) {
+    if (input.isKeyJustPressed(SDL_SCANCODE_UP)) {
         selectedIndex--;
         if (selectedIndex < 0)
             selectedIndex = options.size() - 1;

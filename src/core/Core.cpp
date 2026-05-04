@@ -31,6 +31,8 @@ void Core::run() {
         }
 
         renderer.present();
+
+        SDL_Delay(16); // 60 FPS
     }
 }
 

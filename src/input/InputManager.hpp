@@ -4,9 +4,12 @@
 
 class InputManager {
 private:
-    const Uint8* keyboardState;
+    Uint8 currentState[SDL_NUM_SCANCODES];
+    Uint8 previousState[SDL_NUM_SCANCODES];
 
 public:
+    InputManager();
     void update();
     bool isKeyPressed(SDL_Scancode key);
+    bool isKeyJustPressed(SDL_Scancode key);
 };
