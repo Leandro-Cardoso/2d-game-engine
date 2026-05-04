@@ -5,5 +5,5 @@
 class TestScene : public Scene {
 public:
     void update() override;
-    void render() override;
+    void render(Renderer& renderer) override;
 };
