@@ -3,9 +3,7 @@
 #include "TestScene.hpp"
 #include "../renderer/Renderer.hpp"
 
-extern Renderer renderer; // Temp.
-
-void TestScene::update() {
+void TestScene::update(InputManager& input) {
     std::cout << "Atualizando cena...\n";
 }
 

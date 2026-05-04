@@ -4,6 +4,6 @@
 
 class TestScene : public Scene {
 public:
-    void update() override;
+    void update(InputManager& input) override;
     void render(Renderer& renderer) override;
 };

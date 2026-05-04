@@ -1,4 +1,5 @@
 #include <iostream>
+#include <SDL2/SDL.h>
 
 #include "Core.hpp"
 
@@ -11,8 +12,15 @@ void Core::init() {
 }
 
 void Core::run() {
-    while (running) {
+    SDL_Event event;
 
+    while (running) {
+        while (SDL_PollEvent(&event)) {
+            if (event.type == SDL_QUIT) {
+                running = false;
+            }
+        }
+        
         input.update();
 
         renderer.clear();
@@ -23,9 +31,6 @@ void Core::run() {
         }
 
         renderer.present();
-
-        // Parar loop:
-        running = false; // Temp.
     }
 }
 
