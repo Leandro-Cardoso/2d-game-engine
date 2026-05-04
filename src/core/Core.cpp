@@ -18,7 +18,7 @@ void Core::run() {
         renderer.clear();
 
         if (currentScene) {
-            currentScene->update();
+            currentScene->update(input);
             currentScene->render(renderer);
         }
 

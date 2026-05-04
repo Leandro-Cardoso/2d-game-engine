@@ -1,15 +1,12 @@
 #include "MainMenuScene.hpp"
 #include "../input/InputManager.hpp"
 
-// Temp:
-extern InputManager input;
-
 MainMenuScene::MainMenuScene() {
     options = {"Novo Jogo", "Opcoes", "Sair"};
     selectedIndex = 0;
 }
 
-void MainMenuScene::update() {
+void MainMenuScene::update(InputManager& input) {
 
     if (input.isKeyPressed(SDL_SCANCODE_DOWN)) {
         selectedIndex++;
