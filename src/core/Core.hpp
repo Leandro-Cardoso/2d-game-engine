@@ -19,4 +19,6 @@ public:
     void shutdown();
 
     void setScene(Scene* scene);
+
+    void quit();
 };

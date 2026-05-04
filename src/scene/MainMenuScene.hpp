@@ -13,6 +13,6 @@ private:
 public:
     MainMenuScene();
 
-    void update(InputManager& input) override;
+    void update(InputManager& input, Core& core) override;
     void render(Renderer& renderer) override;
 };

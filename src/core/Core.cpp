@@ -26,7 +26,7 @@ void Core::run() {
         renderer.clear();
 
         if (currentScene) {
-            currentScene->update(input);
+            currentScene->update(input, *this);
             currentScene->render(renderer);
         }
 
@@ -43,4 +43,8 @@ void Core::shutdown() {
 
 void Core::setScene(Scene* scene) {
     currentScene = scene;
+}
+
+void Core::quit() {
+    running = false;
 }
