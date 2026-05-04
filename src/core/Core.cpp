@@ -6,16 +6,21 @@ Core::Core() : running(false), currentScene(nullptr) {}
 
 void Core::init() {
     running = true;
+    renderer.init("Engine", 800, 600);
     std::cout << "Engine iniciada\n";
 }
 
 void Core::run() {
     while (running) {
 
+        renderer.clear();
+
         if (currentScene) {
             currentScene->update();
             currentScene->render();
         }
+
+        renderer.present();
 
         // Parar loop:
         running = false;
@@ -23,6 +28,7 @@ void Core::run() {
 }
 
 void Core::shutdown() {
+    renderer.shutdown();
     std::cout << "Engine encerrada\n";
 }
 
