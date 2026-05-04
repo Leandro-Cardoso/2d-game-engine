@@ -13,6 +13,8 @@ void Core::init() {
 void Core::run() {
     while (running) {
 
+        input.update();
+
         renderer.clear();
 
         if (currentScene) {
@@ -23,7 +25,7 @@ void Core::run() {
         renderer.present();
 
         // Parar loop:
-        running = false;
+        running = false; // Temp.
     }
 }
 
