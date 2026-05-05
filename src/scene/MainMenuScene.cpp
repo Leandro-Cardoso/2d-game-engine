@@ -3,7 +3,9 @@
 #include "MainMenuScene.hpp"
 #include "../input/InputManager.hpp"
 #include "../core/Core.hpp"
+
 #include "GameScene.hpp"
+#include "OptionsScene.hpp"
 
 MainMenuScene::MainMenuScene() {
     options = {"Novo Jogo", "Opcoes", "Sair"};
@@ -12,6 +14,7 @@ MainMenuScene::MainMenuScene() {
 
 void MainMenuScene::update(InputManager& input, Core& core) {
 
+    // Navegacao:
     if (input.isKeyJustPressed(SDL_SCANCODE_DOWN)) {
         selectedIndex++;
         if (selectedIndex >= options.size())
@@ -24,6 +27,7 @@ void MainMenuScene::update(InputManager& input, Core& core) {
             selectedIndex = options.size() - 1;
     }
 
+    // Opcoes:
     if (input.isKeyJustPressed(SDL_SCANCODE_RETURN)) {
 
         // Novo Jogo:
@@ -35,6 +39,7 @@ void MainMenuScene::update(InputManager& input, Core& core) {
         // Opcoes:
         if (options[selectedIndex] == "Opcoes") {
             std::cout << "Abrir opcoes...\n";
+            core.setScene(new OptionsScene());
         }
 
         // Sair:
@@ -54,12 +59,12 @@ void MainMenuScene::render(Renderer& renderer) {
         int x = 300;
         int y = startY + i * 50;
 
-        // selecao:
+        // Selecao:
         if (i == selectedIndex) {
             renderer.drawRect(x - 20, y - 10, 200, 40);
         }
 
-        // simulando texto:
+        // Item:
         renderer.drawRect(x, y, 150, 30);
     }
 }
