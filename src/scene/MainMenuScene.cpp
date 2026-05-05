@@ -61,10 +61,10 @@ void MainMenuScene::render(Renderer& renderer) {
 
         // Selecao:
         if (i == selectedIndex) {
-            renderer.drawRect(x - 20, y - 10, 200, 40);
+            renderer.drawRect(x - 10, y - 5, 220, 40);
         }
 
         // Item:
-        renderer.drawRect(x, y, 150, 30);
+        renderer.drawText(options[i].c_str(), x, y);
     }
 }

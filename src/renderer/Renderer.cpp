@@ -25,7 +25,7 @@ bool Renderer::init(const char* title, int width, int height) {
 
     // Fonte:
     TTF_Init();
-    font = TTF_OpenFont("assets/JetBrainsMono.ttf", 24);
+    font = TTF_OpenFont("assets/fonts/JetBrainsMono.ttf", 24);
     if (!font) {
         std::cout << "Erro ao carregar fonte\n";
     }
