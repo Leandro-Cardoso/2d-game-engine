@@ -5,6 +5,7 @@
 Renderer::Renderer() : window(nullptr), renderer(nullptr) {}
 
 bool Renderer::init(const char* title, int width, int height) {
+    // Janela:
     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_EVENTS) != 0) {
         std::cout << "Erro SDL\n";
         return false;
@@ -22,6 +23,13 @@ bool Renderer::init(const char* title, int width, int height) {
 
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 
+    // Fonte:
+    TTF_Init();
+    font = TTF_OpenFont("assets/JetBrainsMono.ttf", 24);
+    if (!font) {
+        std::cout << "Erro ao carregar fonte\n";
+    }
+
     return true;
 }
 
@@ -34,14 +42,36 @@ void Renderer::present() {
     SDL_RenderPresent(renderer);
 }
 
+void Renderer::shutdown() {
+    // Fonte:
+    TTF_CloseFont(font);
+    TTF_Quit();
+
+    // Tela:
+    SDL_DestroyRenderer(renderer);
+    SDL_DestroyWindow(window);
+    SDL_Quit();
+}
+
+// Retangulo:
 void Renderer::drawRect(int x, int y, int w, int h) {
     SDL_Rect rect = {x, y, w, h};
     SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
     SDL_RenderFillRect(renderer, &rect);
 }
 
-void Renderer::shutdown() {
-    SDL_DestroyRenderer(renderer);
-    SDL_DestroyWindow(window);
-    SDL_Quit();
+// Texto:
+void Renderer::drawText(const char* text, int x, int y) {
+
+    SDL_Color color = {255, 255, 255};
+
+    SDL_Surface* surface = TTF_RenderText_Solid(font, text, color);
+    SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer, surface);
+
+    SDL_Rect dst = {x, y, surface->w, surface->h};
+
+    SDL_RenderCopy(renderer, texture, NULL, &dst);
+
+    SDL_FreeSurface(surface);
+    SDL_DestroyTexture(texture);
 }
