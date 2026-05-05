@@ -2,14 +2,14 @@
 
 #include "GameScene.hpp"
 #include "../core/Core.hpp"
-#include "MainMenuScene.hpp"
+#include "PauseScene.hpp"
 
 void GameScene::update(InputManager& input, Core& core) {
 
-    // ESC - Menu:
+    // ESC - Pause:
     if (input.isKeyJustPressed(SDL_SCANCODE_ESCAPE)) {
-        std::cout << "Voltando ao menu...\n";
-        core.setScene(new MainMenuScene());
+        std::cout << "Abrindo menu de pausa...\n";
+        core.setScene(new PauseScene());
     }
 }
 
