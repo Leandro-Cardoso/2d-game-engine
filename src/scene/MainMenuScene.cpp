@@ -3,6 +3,7 @@
 #include "MainMenuScene.hpp"
 #include "../input/InputManager.hpp"
 #include "../core/Core.hpp"
+#include "GameScene.hpp"
 
 MainMenuScene::MainMenuScene() {
     options = {"Novo Jogo", "Opcoes", "Sair"};
@@ -25,14 +26,18 @@ void MainMenuScene::update(InputManager& input, Core& core) {
 
     if (input.isKeyJustPressed(SDL_SCANCODE_RETURN)) {
 
+        // Novo Jogo:
         if (options[selectedIndex] == "Novo Jogo") {
             std::cout << "Iniciar jogo...\n";
+            core.setScene(new GameScene());
         }
 
+        // Opcoes:
         if (options[selectedIndex] == "Opcoes") {
             std::cout << "Abrir opcoes...\n";
         }
 
+        // Sair:
         if (options[selectedIndex] == "Sair") {
             std::cout << "Saindo...\n";
             core.quit();
