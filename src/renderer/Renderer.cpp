@@ -65,7 +65,7 @@ void Renderer::drawText(const char* text, int x, int y) {
 
     SDL_Color color = {255, 255, 255};
 
-    SDL_Surface* surface = TTF_RenderText_Solid(font, text, color);
+    SDL_Surface* surface = TTF_RenderUTF8_Solid(font, text, color);
     SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer, surface);
 
     SDL_Rect dst = {x, y, surface->w, surface->h};

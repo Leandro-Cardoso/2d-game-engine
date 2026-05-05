@@ -8,7 +8,7 @@
 #include "OptionsScene.hpp"
 
 MainMenuScene::MainMenuScene() {
-    options = {"Novo Jogo", "Opcoes", "Sair"};
+    options = {"Novo Jogo", "Configurações", "Sair"};
     selectedIndex = 0;
 }
 
@@ -36,8 +36,8 @@ void MainMenuScene::update(InputManager& input, Core& core) {
             core.setScene(new GameScene());
         }
 
-        // Opcoes:
-        if (options[selectedIndex] == "Opcoes") {
+        // Configuracoes:
+        if (options[selectedIndex] == "Configurações") {
             std::cout << "Abrir opcoes...\n";
             core.setScene(new OptionsScene());
         }
@@ -61,7 +61,7 @@ void MainMenuScene::render(Renderer& renderer) {
 
         // Selecao:
         if (i == selectedIndex) {
-            renderer.drawRect(x - 10, y - 5, 220, 40);
+            renderer.drawRect(x - 20, y - 5, 10, 40);
         }
 
         // Item:
