@@ -1,11 +1,11 @@
 #include <iostream>
 
-#include "MainMenuScene.hpp"
-#include "../input/InputManager.hpp"
-#include "../core/Core.hpp"
+#include <scene/MainMenuScene.hpp>
+#include <input/InputManager.hpp>
+#include <core/Core.hpp>
 
-#include "GameScene.hpp"
-#include "OptionsScene.hpp"
+#include <scene/GameScene.hpp>
+#include <scene/OptionsScene.hpp>
 
 MainMenuScene::MainMenuScene() {
     options = {"Novo Jogo", "Configurações", "Sair"};

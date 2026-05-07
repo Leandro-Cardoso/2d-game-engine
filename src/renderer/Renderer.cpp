@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "Renderer.hpp"
+#include <renderer/Renderer.hpp>
 
 Renderer::Renderer() : window(nullptr), renderer(nullptr) {}
 

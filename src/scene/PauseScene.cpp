@@ -1,10 +1,10 @@
 #include <iostream>
 
-#include "PauseScene.hpp"
-#include "../core/Core.hpp"
+#include <scene/PauseScene.hpp>
+#include <core/Core.hpp>
 
-#include "GameScene.hpp"
-#include "MainMenuScene.hpp"
+#include <scene/GameScene.hpp>
+#include <scene/MainMenuScene.hpp>
 
 PauseScene::PauseScene() {
     options = {"Continuar", "Menu Principal", "Sair"};

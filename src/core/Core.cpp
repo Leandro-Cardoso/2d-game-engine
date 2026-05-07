@@ -1,7 +1,7 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 
-#include "Core.hpp"
+#include <core/Core.hpp>
 
 Core::Core() : running(false), currentScene(nullptr) {}
 

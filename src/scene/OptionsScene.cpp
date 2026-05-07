@@ -1,9 +1,9 @@
 #include <iostream>
 
-#include "../core/Core.hpp"
+#include <core/Core.hpp>
 
-#include "OptionsScene.hpp"
-#include "MainMenuScene.hpp"
+#include <scene/OptionsScene.hpp>
+#include <scene/MainMenuScene.hpp>
 
 OptionsScene::OptionsScene() {
     options = {"Fullscreen", "Volume", "Voltar"};

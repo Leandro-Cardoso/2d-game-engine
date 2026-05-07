@@ -1,10 +1,10 @@
 #include <iostream>
 
-#include "../core/Core.hpp"
-#include "GameOverScene.hpp"
+#include <core/Core.hpp>
+#include <scene/GameOverScene.hpp>
 
-#include "GameScene.hpp"
-#include "MainMenuScene.hpp"
+#include <scene/GameScene.hpp>
+#include <scene/MainMenuScene.hpp>
 
 GameOverScene::GameOverScene() {
     options = {"Reiniciar", "Menu Principal", "Sair"};

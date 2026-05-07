@@ -1,6 +1,6 @@
 #include <cstring>
 
-#include "InputManager.hpp"
+#include <input/InputManager.hpp>
 
 InputManager::InputManager() {
     memset(currentState, 0, SDL_NUM_SCANCODES);

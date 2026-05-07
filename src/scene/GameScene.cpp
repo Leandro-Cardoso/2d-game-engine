@@ -1,10 +1,10 @@
 #include <iostream>
 
-#include "GameScene.hpp"
-#include "../core/Core.hpp"
+#include <scene/GameScene.hpp>
+#include <core/Core.hpp>
 
-#include "PauseScene.hpp"
-#include "GameOverScene.hpp"
+#include <scene/PauseScene.hpp>
+#include <scene/GameOverScene.hpp>
 
 void GameScene::update(InputManager& input, Core& core) {
 
