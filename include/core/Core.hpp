@@ -1,8 +1,8 @@
 #pragma once
 
-#include "../scene/Scene.hpp"
-#include "../renderer/Renderer.hpp"
-#include "../input/InputManager.hpp"
+#include <scene/Scene.hpp>
+#include <renderer/Renderer.hpp>
+#include <input/InputManager.hpp>
 
 class Core {
 private:

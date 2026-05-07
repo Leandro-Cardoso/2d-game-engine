@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../renderer/Renderer.hpp"
-#include "../input/InputManager.hpp"
+#include <renderer/Renderer.hpp>
+#include <input/InputManager.hpp>
 
 class Core;
 

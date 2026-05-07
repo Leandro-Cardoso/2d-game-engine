@@ -3,15 +3,19 @@
 #include <vector>
 #include <string>
 
-#include "Scene.hpp"
+#include <scene/Scene.hpp>
 
-class GameOverScene : public Scene {
+class OptionsScene : public Scene {
 private:
     std::vector<std::string> options;
     int selectedIndex;
 
+    // estados das opções
+    bool fullscreen;
+    int volume;
+
 public:
-    GameOverScene();
+    OptionsScene();
 
     void update(InputManager& input, Core& core) override;
     void render(Renderer& renderer) override;

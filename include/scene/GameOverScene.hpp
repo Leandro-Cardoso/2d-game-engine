@@ -3,15 +3,15 @@
 #include <vector>
 #include <string>
 
-#include "Scene.hpp"
+#include <scene/Scene.hpp>
 
-class MainMenuScene : public Scene {
+class GameOverScene : public Scene {
 private:
     std::vector<std::string> options;
     int selectedIndex;
 
 public:
-    MainMenuScene();
+    GameOverScene();
 
     void update(InputManager& input, Core& core) override;
     void render(Renderer& renderer) override;
