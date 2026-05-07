@@ -1,5 +1,5 @@
-#include "../core/Core.hpp"
-#include "../scene/MainMenuScene.hpp"
+#include <core/Core.hpp>
+#include <scene/MainMenuScene.hpp>
 
 int main(int argc, char* argv[]) {
     Core core;
