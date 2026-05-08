@@ -22,12 +22,12 @@ gráficas.
 
 ### [➤ Abrir Documentação](https://leandro-cardoso.github.io/2d-game-engine/) ⚙️
 
-## Documentos para Praticas Extensionistas Integradoras VI:
+## 📄 Documentos para Praticas Extensionistas Integradoras VI:
 
 * [Introdução e Metodologia](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/INTRODUCAO-DO-PROJETO.pdf)
 * [Artigo](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/PEI-DESENVOLVIMENNTO-DE-GAME-ENGINE-2D-EM-CPP.pdf)
 
-## Documentos
+## 📄 Documentos
 
 * [Documento de Requisitos](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/DOCUMENTO-DE-REQUISITOS.pdf)
 * [Documento de Arquitetura de Software](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/DOCUMENTO-DE-ARQUITETURA-DE-SOFTWARE.pdf)
@@ -35,15 +35,7 @@ gráficas.
 * [Documentação](https://leandro-cardoso.github.io/2d-game-engine/) ⚙️
 * Artigo Acadêmico ⚙️
 
-## Builds
-
-Em desenvolvimento.
-
-## Features
-
-Em desenvolvimento.
-
-## Fases de Desenvolvimento
+## ⚙️ Fases de Desenvolvimento
 
 ### ⚙️ Fase 3 - Implementação do Núcleo (core)
 
@@ -99,7 +91,7 @@ Em desenvolvimento.
 * ✓ Definição de responsabilidades.
 * ✓ Estruturação dos pacotes da biblioteca.
 
-## Requisitos
+## ⚙️ Requisitos
 
 ### Funcionais:
 
@@ -172,3 +164,99 @@ Em desenvolvimento.
 * **RNF07** – Organização do Código
 
     O código da engine deve ser estruturado em módulos ou componentes claramente definidos, com responsabilidades bem delimitadas.
+
+## ✨ Features
+
+Em desenvolvimento.
+
+## 📁 Estrutura do Projeto
+
+Em desenvolvimento.
+
+```text
+2d-game-engine/
+│
+├── include/
+│   └── a/
+│       ├── A.hpp
+│       └── B.hpp
+│
+├── src/
+│   └── a/
+│       ├── A.cpp
+│       └── B.cpp
+│
+├── tests/
+│   └── a/
+│       ├── ATests.cpp
+│       └── BTests.cpp
+│
+├── CMakeLists.txt
+├── .gitignore
+├── README.md
+└── LICENSE
+```
+
+## ⚙️ Requisitos
+
+- C++ 17+
+- CMake 3.10+
+- Compiladores compatíveis:
+    - GCC
+    - Clang
+    - MSVC
+- Bibliotecas externas:
+    - SDL2
+    - SDL2_TTF
+
+## 🚀 Build e instalação
+
+1. Clone
+
+```bash
+git clone https://github.com/Leandro-Cardoso/2d-game-engine/
+cd 2d-game-engine
+```
+
+2. Configuração
+
+```bash
+cmake -S . -B build -G "MinGW Makefiles" -DCMAKE_INSTALL_PREFIX=dist
+```
+
+3. Gerar build
+
+```bash
+cmake --build build
+```
+
+4. Instalar
+
+```bash
+cmake --install build
+```
+## ▶️ Executar exemplos
+
+Em desenvolvimento.
+
+## 📌 Exemplos
+
+Em desenvolvimento.
+
+## 🧪 Executar testes
+
+```bash
+cd build
+ctest
+```
+
+Ou:
+
+```bash
+cd build
+.\tests.exe
+```
+
+## 📄 Licença
+
+[MIT License](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/LICENSE)
