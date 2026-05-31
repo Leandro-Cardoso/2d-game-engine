@@ -29,6 +29,8 @@ gráficas.
 
 ## 📄 Documentos
 
+* [PITCH](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/PITCH-Desenvolvimento-de-uma-Game-Engine-2D-em-C.pdf)
+* [Termo de Abertura de Projeto](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/TAP-Termo_de_Abertura_de_Projeto.pdf)
 * [Documento de Requisitos](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/DOCUMENTO-DE-REQUISITOS.pdf)
 * [Documento de Arquitetura de Software](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/DOCUMENTO-DE-ARQUITETURA-DE-SOFTWARE.pdf)
 * [Plano de Gerenciamento do Projeto](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/PLANO-DE-GERENCIAMENTO-DO-PROJETO.pdf)
