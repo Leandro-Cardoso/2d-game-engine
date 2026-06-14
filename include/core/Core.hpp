@@ -2,25 +2,41 @@
 
 #include <memory>
 
-#include <scene/Scene.hpp>
-#include <renderer/Renderer.hpp>
-#include <input/InputManager.hpp>
+#include "renderer/Renderer.hpp"
+#include "input/InputManager.hpp"
+#include "core/ResourceManager.hpp"
+#include "scene/Scene.hpp"
 
 class Core {
 private:
     bool running;
-    std::unique_ptr<Scene> currentScene;
+
     Renderer renderer;
+
     InputManager input;
+
+    ResourceManager resourceManager;
+
+    std::unique_ptr<Scene> currentScene;
 
 public:
     Core();
 
     void init();
+
     void run();
+
     void shutdown();
 
-    void setScene(std::unique_ptr<Scene> scene);
-
     void quit();
+
+    void setScene(
+        std::unique_ptr<Scene> scene
+    );
+
+    Renderer& getRenderer();
+
+    InputManager& getInput();
+
+    ResourceManager& getResourceManager();
 };

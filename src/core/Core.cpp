@@ -8,44 +8,63 @@ Core::Core() : running(false), currentScene(nullptr) {}
 
 void Core::init() {
     running = true;
-    renderer.init("Engine", 800, 600);
-    std::cout << "Engine iniciada\n";
+
+    renderer.init(
+        "2D Game Engine",
+        800,
+        600
+    );
 }
 
 void Core::run() {
-    SDL_Event event;
-
     while (running) {
-        while (SDL_PollEvent(&event)) {
-            if (event.type == SDL_QUIT) {
-                running = false;
-            }
-        }
-        
+
         input.update();
 
         renderer.clear();
 
         if (currentScene) {
-            currentScene->update(input, *this);
-            currentScene->render(renderer);
+
+            currentScene->update(
+                input,
+                *this
+            );
+
+            currentScene->render(
+                renderer
+            );
         }
 
         renderer.present();
-
-        SDL_Delay(16); // 60 FPS
     }
 }
 
 void Core::shutdown() {
+    resourceManager.clear();
+
     renderer.shutdown();
-    std::cout << "Engine encerrada\n";
 }
 
-void Core::setScene(std::unique_ptr<Scene> scene) {
-    currentScene = std::move(scene);
+void Core::setScene(
+    std::unique_ptr<Scene> scene
+) {
+    currentScene =
+        std::move(scene);
 }
 
 void Core::quit() {
     running = false;
+}
+
+Renderer& Core::getRenderer() {
+    return renderer;
+}
+
+InputManager& Core::getInput() {
+    return input;
+}
+
+ResourceManager&
+Core::getResourceManager() {
+    return resourceManager;
 }
