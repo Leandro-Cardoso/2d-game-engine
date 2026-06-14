@@ -9,9 +9,15 @@
 
 #include <entity/Player.hpp>
 
-GameScene::GameScene() {
+GameScene::GameScene()
+{
+    auto p =
+        std::make_unique<Player>();
+
+    player = p.get();
+
     addEntity(
-        std::make_unique<Player>()
+        std::move(p)
     );
 }
 
@@ -34,6 +40,51 @@ void GameScene::update(InputManager& input, Core& core) {
         std::cout << "Game over!\n";
         core.setScene(
             std::make_unique<GameOverScene>()
+        );
+    }
+
+    // Player movement:
+    if (
+        input.isKeyPressed(
+            SDL_SCANCODE_UP
+        )
+    ) {
+        player->move(
+            0,
+            -5
+        );
+    }
+
+    if (
+        input.isKeyPressed(
+            SDL_SCANCODE_DOWN
+        )
+    ) {
+        player->move(
+            0,
+            5
+        );
+    }
+
+    if (
+        input.isKeyPressed(
+            SDL_SCANCODE_LEFT
+        )
+    ) {
+        player->move(
+            -5,
+            0
+        );
+    }
+
+    if (
+        input.isKeyPressed(
+            SDL_SCANCODE_RIGHT
+        )
+    ) {
+        player->move(
+            5,
+            0
         );
     }
 }

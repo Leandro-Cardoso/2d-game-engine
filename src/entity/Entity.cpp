@@ -1,4 +1,5 @@
 #include "entity/Entity.hpp"
+#include "input/InputManager.hpp"
 
 Entity::Entity()
     : active(true)
@@ -24,4 +25,16 @@ Vector2 Entity::getPosition() const {
 void Entity::setPosition(float x, float y) {
     position.x = x;
     position.y = y;
+}
+
+Vector2 Entity::getVelocity() const {
+    return velocity;
+}
+
+void Entity::setVelocity(
+    float x,
+    float y
+) {
+    velocity.x = x;
+    velocity.y = y;
 }

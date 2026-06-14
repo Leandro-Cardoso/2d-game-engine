@@ -1,6 +1,7 @@
 #pragma once
 
 #include "scene/Scene.hpp"
+#include "entity/Player.hpp"
 
 class GameScene : public Scene {
 public:
@@ -14,4 +15,7 @@ public:
     void render(
         Renderer& renderer
     ) override;
+    
+private:
+    Player* player;
 };

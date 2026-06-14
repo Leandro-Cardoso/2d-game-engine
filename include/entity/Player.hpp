@@ -3,6 +3,9 @@
 #include "entity/Entity.hpp"
 
 class Player : public Entity {
+private:
+    float speed;
+
 public:
     Player();
 
@@ -11,4 +14,9 @@ public:
     void render(
         Renderer& renderer
     ) override;
+
+    void move(
+        float dx,
+        float dy
+    );
 };
