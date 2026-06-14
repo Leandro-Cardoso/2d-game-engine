@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 
 #include <core/Core.hpp>
 #include <scene/GameOverScene.hpp>
@@ -32,12 +33,16 @@ void GameOverScene::update(InputManager& input, Core& core) {
         // Reiniciar:
         if (options[selectedIndex] == "Reiniciar") {
             std::cout << "Reiniciando jogo...\n";
-            core.setScene(new GameScene());
+            core.setScene(
+                std::make_unique<GameScene>()
+            );
         }
 
         // Menu Principal:
         if (options[selectedIndex] == "Menu Principal") {
-            core.setScene(new MainMenuScene());
+            core.setScene(
+                std::make_unique<MainMenuScene>()
+            );
         }
 
         // Sair:

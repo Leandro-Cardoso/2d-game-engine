@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 
 #include <scene/MainMenuScene.hpp>
 #include <input/InputManager.hpp>
@@ -33,13 +34,17 @@ void MainMenuScene::update(InputManager& input, Core& core) {
         // Novo Jogo:
         if (options[selectedIndex] == "Novo Jogo") {
             std::cout << "Iniciar jogo...\n";
-            core.setScene(new GameScene());
+            core.setScene(
+                std::make_unique<GameScene>()
+            );
         }
 
         // Configuracoes:
         if (options[selectedIndex] == "Configurações") {
             std::cout << "Abrir opcoes...\n";
-            core.setScene(new OptionsScene());
+            core.setScene(
+                std::make_unique<OptionsScene>()
+            );
         }
 
         // Sair:

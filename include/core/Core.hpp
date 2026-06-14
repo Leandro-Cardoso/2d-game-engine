@@ -1,5 +1,7 @@
 #pragma once
 
+#include <memory>
+
 #include <scene/Scene.hpp>
 #include <renderer/Renderer.hpp>
 #include <input/InputManager.hpp>
@@ -7,7 +9,7 @@
 class Core {
 private:
     bool running;
-    Scene* currentScene;
+    std::unique_ptr<Scene> currentScene;
     Renderer renderer;
     InputManager input;
 
@@ -18,7 +20,7 @@ public:
     void run();
     void shutdown();
 
-    void setScene(Scene* scene);
+    void setScene(std::unique_ptr<Scene> scene);
 
     void quit();
 };

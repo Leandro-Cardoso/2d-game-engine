@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 
 #include <scene/PauseScene.hpp>
 #include <core/Core.hpp>
@@ -31,12 +32,16 @@ void PauseScene::update(InputManager& input, Core& core) {
 
         // Continuar:
         if (options[selectedIndex] == "Continuar") {
-            core.setScene(new GameScene());
+            core.setScene(
+                std::make_unique<GameScene>()
+            );
         }
 
         // Menu Principal:
         if (options[selectedIndex] == "Menu Principal") {
-            core.setScene(new MainMenuScene());
+            core.setScene(
+                std::make_unique<MainMenuScene>()
+            );
         }
 
         // Sair:
@@ -47,7 +52,9 @@ void PauseScene::update(InputManager& input, Core& core) {
 
     // ESC - Continuar:
     if (input.isKeyJustPressed(SDL_SCANCODE_ESCAPE)) {
-        core.setScene(new GameScene());
+        core.setScene(
+            std::make_unique<GameScene>()
+        );
     }
 }
 

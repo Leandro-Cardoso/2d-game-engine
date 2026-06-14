@@ -1,3 +1,6 @@
+#include <iostream>
+#include <memory>
+
 #include <core/Core.hpp>
 #include <scene/MainMenuScene.hpp>
 
@@ -6,7 +9,9 @@ int main(int argc, char* argv[]) {
 
     core.init();
 
-    core.setScene(new MainMenuScene()); // Tela menu principal.
+    core.setScene(
+        std::make_unique<MainMenuScene>()
+    ); // Tela menu principal.
 
     core.run();
     core.shutdown();

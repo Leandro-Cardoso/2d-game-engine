@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 #include <SDL2/SDL.h>
 
 #include <core/Core.hpp>
@@ -41,8 +42,8 @@ void Core::shutdown() {
     std::cout << "Engine encerrada\n";
 }
 
-void Core::setScene(Scene* scene) {
-    currentScene = scene;
+void Core::setScene(std::unique_ptr<Scene> scene) {
+    currentScene = std::move(scene);
 }
 
 void Core::quit() {

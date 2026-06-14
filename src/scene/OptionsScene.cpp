@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 
 #include <core/Core.hpp>
 
@@ -47,13 +48,17 @@ void OptionsScene::update(InputManager& input, Core& core) {
 
         // Voltar:
         if (options[selectedIndex] == "Voltar") {
-            core.setScene(new MainMenuScene());
+            core.setScene(
+                std::make_unique<MainMenuScene>()
+            );
         }
     }
 
     // ESC - Menu:
     if (input.isKeyJustPressed(SDL_SCANCODE_ESCAPE)) {
-        core.setScene(new MainMenuScene());
+        core.setScene(
+            std::make_unique<MainMenuScene>()
+        );
     }
 }
 
