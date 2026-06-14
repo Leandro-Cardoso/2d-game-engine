@@ -10,7 +10,7 @@
 #include <entity/Player.hpp>
 
 GameScene::GameScene() {
-    entities.push_back(
+    addEntity(
         std::make_unique<Player>()
     );
 }

@@ -18,6 +18,10 @@ protected:
 public:
     virtual ~Scene() = default;
 
+    void addEntity(
+        std::unique_ptr<Entity> entity
+    );
+
     virtual void update(
         InputManager& input,
         Core& core
