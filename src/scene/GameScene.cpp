@@ -8,16 +8,20 @@
 #include <scene/GameOverScene.hpp>
 
 #include <entity/Player.hpp>
+#include <entity/Enemy.hpp>
 
 GameScene::GameScene()
 {
-    auto p =
-        std::make_unique<Player>();
+    auto p = std::make_unique<Player>();
 
     player = p.get();
 
     addEntity(
         std::move(p)
+    );
+
+    addEntity(
+        std::make_unique<Enemy>()
     );
 }
 
