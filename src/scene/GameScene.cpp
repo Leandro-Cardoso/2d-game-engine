@@ -7,7 +7,19 @@
 #include <scene/PauseScene.hpp>
 #include <scene/GameOverScene.hpp>
 
+#include <entity/Player.hpp>
+
+GameScene::GameScene() {
+    entities.push_back(
+        std::make_unique<Player>()
+    );
+}
+
 void GameScene::update(InputManager& input, Core& core) {
+    // Entities:
+    for (auto& entity : entities) {
+        entity->update();
+    }
 
     // ESC - Pause:
     if (input.isKeyJustPressed(SDL_SCANCODE_ESCAPE)) {
@@ -27,7 +39,8 @@ void GameScene::update(InputManager& input, Core& core) {
 }
 
 void GameScene::render(Renderer& renderer) {
-
-    // Tela de jogo:
-    renderer.drawRect(250, 150, 300, 200);
+    // Entities:
+    for (auto& entity : entities) {
+        entity->render(renderer);
+    }
 }
