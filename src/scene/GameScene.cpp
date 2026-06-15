@@ -12,6 +12,7 @@
 
 GameScene::GameScene()
 {
+    // PLAYER:
     auto p = std::make_unique<Player>();
 
     player = p.get();
@@ -30,6 +31,7 @@ GameScene::GameScene()
         std::move(p)
     );
 
+    // ENEMY:
     auto e =
         std::make_unique<Enemy>();
 
@@ -48,6 +50,37 @@ GameScene::GameScene()
     addEntity(
         std::move(e)
     );
+
+    // MAP:
+    map.create(
+        25,
+        18,
+        32
+    );
+
+    for (int x = 0; x < 25; x++) {
+        map.setTile(x, 0, 1);
+
+        map.setTile(
+            x,
+            17,
+            1
+        );
+    }
+
+    for (int y = 0; y < 18; y++) {
+        map.setTile(
+            0,
+            y,
+            1
+        );
+
+        map.setTile(
+            24,
+            y,
+            1
+        );
+    }
 }
 
 void GameScene::initialize(
@@ -159,6 +192,9 @@ void GameScene::update(InputManager& input, Core& core) {
 }
 
 void GameScene::render(Renderer& renderer) {
+    // Map:
+    map.render(renderer);
+
     // Entities:
     for (auto& entity : entities) {
         entity->render(renderer);
