@@ -16,13 +16,78 @@ GameScene::GameScene()
 
     player = p.get();
 
+    player->setPosition(
+        100,
+        100
+    );
+
+    player->getSprite().setSize(
+        64,
+        64
+    );
+
     addEntity(
         std::move(p)
     );
 
-    addEntity(
-        std::make_unique<Enemy>()
+    auto e =
+        std::make_unique<Enemy>();
+
+    enemy = e.get();
+
+    enemy->setPosition(
+        400,
+        300
     );
+
+    enemy->getSprite().setSize(
+        64,
+        64
+    );
+
+    addEntity(
+        std::move(e)
+    );
+}
+
+void GameScene::initialize(
+    Core& core
+) {
+    std::cout << "GameScene::initialize() executado\n";
+    
+    auto playerTexture =
+        core.getResourceManager()
+            .getTexture(
+                "assets/textures/player.png"
+            );
+
+    playerTexture->load(
+        core.getRenderer()
+            .getSDLRenderer(),
+        "assets/textures/player.png"
+    );
+
+    player->getSprite()
+          .setTexture(
+              playerTexture
+          );
+
+    auto enemyTexture =
+        core.getResourceManager()
+            .getTexture(
+                "assets/textures/enemy.png"
+            );
+
+    enemyTexture->load(
+        core.getRenderer()
+            .getSDLRenderer(),
+        "assets/textures/enemy.png"
+    );
+
+    enemy->getSprite()
+         .setTexture(
+             enemyTexture
+         );
 }
 
 void GameScene::update(InputManager& input, Core& core) {

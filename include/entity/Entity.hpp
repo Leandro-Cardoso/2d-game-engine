@@ -31,4 +31,5 @@ public:
     void setPosition(float x, float y);
     Vector2 getVelocity() const;
     void setVelocity(float x, float y);
+    Sprite& getSprite();
 };

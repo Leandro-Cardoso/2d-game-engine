@@ -18,6 +18,10 @@ protected:
 public:
     virtual ~Scene() = default;
 
+    virtual void initialize(
+        Core& core
+    );
+
     void addEntity(
         std::unique_ptr<Entity> entity
     );

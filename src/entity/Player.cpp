@@ -26,11 +26,7 @@ void Player::update() {
 
 void Player::render(
     Renderer& renderer
-) {
-    renderer.drawRect(
-        static_cast<int>(position.x),
-        static_cast<int>(position.y),
-        50,
-        50
-    );
+)
+{
+    Entity::render(renderer);
 }

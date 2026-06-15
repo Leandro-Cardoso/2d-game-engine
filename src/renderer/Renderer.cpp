@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include <renderer/Renderer.hpp>
+#include <graphics/Texture.hpp>
 
 Renderer::Renderer() : window(nullptr), renderer(nullptr) {}
 
@@ -42,6 +43,12 @@ void Renderer::present() {
     SDL_RenderPresent(renderer);
 }
 
+SDL_Renderer*
+Renderer::getSDLRenderer()
+{
+    return renderer;
+}
+
 void Renderer::shutdown() {
     // Fonte:
     TTF_CloseFont(font);
@@ -61,11 +68,10 @@ void Renderer::drawRect(int x, int y, int w, int h) {
 }
 
 // Texto:
-void Renderer::drawText(const char* text, int x, int y) {
-
+void Renderer::drawText(const std::string& text, int x, int y) {
     SDL_Color color = {255, 255, 255};
 
-    SDL_Surface* surface = TTF_RenderUTF8_Solid(font, text, color);
+    SDL_Surface* surface = TTF_RenderUTF8_Solid(font, text.c_str(), color);
     SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer, surface);
 
     SDL_Rect dst = {x, y, surface->w, surface->h};
@@ -74,4 +80,27 @@ void Renderer::drawText(const char* text, int x, int y) {
 
     SDL_FreeSurface(surface);
     SDL_DestroyTexture(texture);
+}
+
+// Textura:
+void Renderer::drawTexture(
+    Texture& texture,
+    int x,
+    int y,
+    int w,
+    int h
+) {
+    SDL_Rect dst = {
+        x,
+        y,
+        w,
+        h
+    };
+
+    SDL_RenderCopy(
+        renderer,
+        texture.getSDLTexture(),
+        nullptr,
+        &dst
+    );
 }

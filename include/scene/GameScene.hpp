@@ -2,10 +2,19 @@
 
 #include "scene/Scene.hpp"
 #include "entity/Player.hpp"
+#include "entity/Enemy.hpp"
 
 class GameScene : public Scene {
+private:
+    Player* player;
+    Enemy* enemy;
+
 public:
     GameScene();
+
+    void initialize(
+        Core& core
+    ) override;
 
     void update(
         InputManager& input,
@@ -15,7 +24,4 @@ public:
     void render(
         Renderer& renderer
     ) override;
-    
-private:
-    Player* player;
 };

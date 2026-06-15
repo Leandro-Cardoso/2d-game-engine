@@ -17,7 +17,16 @@ void Core::init() {
 }
 
 void Core::run() {
+    SDL_Event event;
+
     while (running) {
+
+        while (SDL_PollEvent(&event)) {
+
+            if (event.type == SDL_QUIT) {
+                running = false;
+            }
+        }
 
         input.update();
 
@@ -36,6 +45,8 @@ void Core::run() {
         }
 
         renderer.present();
+
+        SDL_Delay(16);
     }
 }
 
@@ -48,8 +59,9 @@ void Core::shutdown() {
 void Core::setScene(
     std::unique_ptr<Scene> scene
 ) {
-    currentScene =
-        std::move(scene);
+    scene->initialize(*this);
+
+    currentScene = std::move(scene);
 }
 
 void Core::quit() {

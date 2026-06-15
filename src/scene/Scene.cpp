@@ -1,5 +1,10 @@
 #include "scene/Scene.hpp"
 
+void Scene::initialize(
+    Core&
+) {
+}
+
 void Scene::addEntity(
     std::unique_ptr<Entity> entity
 ) {

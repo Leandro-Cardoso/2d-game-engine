@@ -4,7 +4,6 @@ std::shared_ptr<Texture>
 ResourceManager::getTexture(
     const std::string& path
 ) {
-
     auto it = textures.find(path);
 
     if (it != textures.end()) {
