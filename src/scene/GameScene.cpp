@@ -52,35 +52,9 @@ GameScene::GameScene()
     );
 
     // MAP:
-    map.create(
-        25,
-        18,
-        32
+    map.load(
+        "assets/maps/level1.txt"
     );
-
-    for (int x = 0; x < 25; x++) {
-        map.setTile(x, 0, 1);
-
-        map.setTile(
-            x,
-            17,
-            1
-        );
-    }
-
-    for (int y = 0; y < 18; y++) {
-        map.setTile(
-            0,
-            y,
-            1
-        );
-
-        map.setTile(
-            24,
-            y,
-            1
-        );
-    }
 }
 
 void GameScene::initialize(
@@ -191,12 +165,19 @@ void GameScene::update(InputManager& input, Core& core) {
     }
 }
 
-void GameScene::render(Renderer& renderer) {
-    // Map:
-    map.render(renderer);
+void GameScene::render(
+    Renderer& renderer
+) {
+    map.render(
+        renderer
+    );
 
-    // Entities:
-    for (auto& entity : entities) {
-        entity->render(renderer);
+    for (
+        auto& entity :
+        entities
+    ) {
+        entity->render(
+            renderer
+        );
     }
 }

@@ -1,71 +1,65 @@
+#include <fstream>
+
 #include "world/TileMap.hpp"
 
 TileMap::TileMap()
-    : width(0),
-      height(0),
-      tileSize(32)
+    : tileSize(64)
 {
 }
 
-void TileMap::create(
-    int width,
-    int height,
-    int tileSize
+bool TileMap::load(
+    const std::string& path
 ) {
-    this->width = width;
-    this->height = height;
-    this->tileSize = tileSize;
+    map.clear();
 
-    tiles.resize(
-        width * height,
-        0
-    );
-}
+    std::ifstream file(path);
 
-void TileMap::setTile(
-    int x,
-    int y,
-    int id
-) {
-    tiles[
-        y * width + x
-    ] = id;
-}
+    if (!file.is_open()) {
+        return false;
+    }
 
-int TileMap::getTile(
-    int x,
-    int y
-) const {
-    return tiles[
-        y * width + x
-    ];
+    std::string line;
+
+    while (
+        std::getline(
+            file,
+            line
+        )
+    ) {
+        map.push_back(line);
+    }
+
+    return true;
 }
 
 void TileMap::render(
     Renderer& renderer
-) {
+)
+{
     for (
-        int y = 0;
-        y < height;
-        y++
-    ) {
+        size_t row = 0;
+        row < map.size();
+        row++
+    )
+    {
         for (
-            int x = 0;
-            x < width;
-            x++
-        ) {
-            int tile =
-                getTile(x, y);
-
-            if (tile == 0)
-                continue;
-
-            renderer.drawRect(
-                x * tileSize,
-                y * tileSize,
-                tileSize,
-                tileSize
-            );
+            size_t col = 0;
+            col < map[row].size();
+            col++
+        )
+        {
+            if (
+                map[row][col]
+                == '1'
+            )
+            {
+                renderer.drawRect(
+                    col * tileSize,
+                    row * tileSize,
+                    tileSize,
+                    tileSize
+                );
+            }
         }
     }
 }

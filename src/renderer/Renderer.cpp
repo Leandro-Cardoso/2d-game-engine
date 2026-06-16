@@ -104,3 +104,18 @@ void Renderer::drawTexture(
         &dst
     );
 }
+
+void Renderer::setColor(
+    Uint8 r,
+    Uint8 g,
+    Uint8 b,
+    Uint8 a
+) {
+    SDL_SetRenderDrawColor(
+        renderer,
+        r,
+        g,
+        b,
+        a
+    );
+}

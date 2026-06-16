@@ -39,21 +39,9 @@ gráficas.
 
 ## ⚙️ Fases de Desenvolvimento
 
-### ⚙️ Fase 3 - Implementação do Núcleo (core)
-
-* ✓ Estrutura base do projeto.
-* Loop principal.
-* Sistema de inicialização.
-
-### Fase 4 - Renderização 2D
-
-* Sistema de tiles.
-* Carregamento de sprites.
-* Renderização em tela.
-
 ### Fase 5 - Gerenciamento de Recursos
 
-* Implementação do Resource Manager.
+* ✓ Implementação do Resource Manager.
 * Controle de carregamento e descarregamento.
 * Otimização de memoria.
 

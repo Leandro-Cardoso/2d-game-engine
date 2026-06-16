@@ -47,6 +47,13 @@ public:
         int h
     );
 
+    void setColor(
+        Uint8 r,
+        Uint8 g,
+        Uint8 b,
+        Uint8 a
+    );
+
     SDL_Renderer* getSDLRenderer();
 
     void shutdown();

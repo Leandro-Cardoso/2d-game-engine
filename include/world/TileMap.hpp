@@ -1,36 +1,22 @@
 #pragma once
 
 #include <vector>
+#include <string>
 
 #include "renderer/Renderer.hpp"
 
 class TileMap {
 private:
-    int width;
-    int height;
-    int tileSize;
+    std::vector<std::string> map;
 
-    std::vector<int> tiles;
+    int tileSize;
 
 public:
     TileMap();
 
-    void create(
-        int width,
-        int height,
-        int tileSize
+    bool load(
+        const std::string& path
     );
-
-    void setTile(
-        int x,
-        int y,
-        int id
-    );
-
-    int getTile(
-        int x,
-        int y
-    ) const;
 
     void render(
         Renderer& renderer
