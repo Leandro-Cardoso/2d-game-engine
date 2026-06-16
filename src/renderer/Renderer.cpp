@@ -3,7 +3,13 @@
 #include <renderer/Renderer.hpp>
 #include <graphics/Texture.hpp>
 
-Renderer::Renderer() : window(nullptr), renderer(nullptr) {}
+Renderer::Renderer()
+    : window(nullptr),
+      renderer(nullptr),
+      font(nullptr),
+      camera(nullptr)
+{
+}
 
 bool Renderer::init(const char* title, int width, int height) {
     // Janela:
@@ -62,7 +68,38 @@ void Renderer::shutdown() {
 
 // Retangulo:
 void Renderer::drawRect(int x, int y, int w, int h) {
-    SDL_Rect rect = {x, y, w, h};
+    int renderX = x;
+    int renderY = y;
+
+    if (camera) {
+        renderX -= camera->getX();
+        renderY -= camera->getY();
+    }
+
+    SDL_Rect rect = {
+        renderX,
+        renderY,
+        w,
+        h
+    };
+    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+    SDL_RenderFillRect(renderer, &rect);
+}
+
+void Renderer::drawRectUI(
+    int x,
+    int y,
+    int w,
+    int h
+)
+{
+    SDL_Rect rect = {
+        x,
+        y,
+        w,
+        h
+    };
+
     SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
     SDL_RenderFillRect(renderer, &rect);
 }
@@ -90,9 +127,17 @@ void Renderer::drawTexture(
     int w,
     int h
 ) {
+    int renderX = x;
+    int renderY = y;
+
+    if (camera) {
+        renderX -= camera->getX();
+        renderY -= camera->getY();
+    }
+
     SDL_Rect dst = {
-        x,
-        y,
+        renderX,
+        renderY,
         w,
         h
     };
@@ -118,4 +163,11 @@ void Renderer::setColor(
         b,
         a
     );
+}
+
+void Renderer::setCamera(
+    Camera* camera
+)
+{
+    this->camera = camera;
 }

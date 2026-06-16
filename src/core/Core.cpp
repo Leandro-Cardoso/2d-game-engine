@@ -14,6 +14,10 @@ void Core::init() {
         800,
         600
     );
+
+    renderer.setCamera(
+        &camera
+    );
 }
 
 void Core::run() {
@@ -79,4 +83,9 @@ InputManager& Core::getInput() {
 ResourceManager&
 Core::getResourceManager() {
     return resourceManager;
+}
+
+Camera& Core::getCamera()
+{
+    return camera;
 }

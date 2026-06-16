@@ -6,6 +6,7 @@
 #include "input/InputManager.hpp"
 #include "core/ResourceManager.hpp"
 #include "scene/Scene.hpp"
+#include "graphics/Camera.hpp"
 
 class Core {
 private:
@@ -18,6 +19,8 @@ private:
     ResourceManager resourceManager;
 
     std::unique_ptr<Scene> currentScene;
+
+    Camera camera;
 
 public:
     Core();
@@ -39,4 +42,6 @@ public:
     InputManager& getInput();
 
     ResourceManager& getResourceManager();
+
+    Camera& getCamera();
 };

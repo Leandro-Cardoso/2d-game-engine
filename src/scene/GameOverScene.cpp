@@ -55,7 +55,7 @@ void GameOverScene::update(InputManager& input, Core& core) {
 void GameOverScene::render(Renderer& renderer) {
 
     // Tela de game over:
-    // renderer.drawRect(0, 0, 800, 600);
+    // renderer.drawRectUI(0, 0, 800, 600);
 
     int startY = 250;
 
@@ -66,7 +66,7 @@ void GameOverScene::render(Renderer& renderer) {
 
         // Selecao:
         if (i == selectedIndex) {
-            renderer.drawRect(x - 20, y - 5, 10, 40);
+            renderer.drawRectUI(x - 20, y - 5, 10, 40);
         }
 
         // Item:

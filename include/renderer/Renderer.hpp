@@ -5,6 +5,8 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 
+#include "graphics/Camera.hpp"
+
 class Texture;
 
 class Renderer {
@@ -12,6 +14,7 @@ private:
     SDL_Window* window;
     SDL_Renderer* renderer;
     TTF_Font* font;
+    Camera* camera;
 
 public:
     Renderer();
@@ -26,6 +29,12 @@ public:
 
     void present();
 
+    void drawText(
+        const std::string& text,
+        int x,
+        int y
+    );
+
     void drawRect(
         int x,
         int y,
@@ -33,10 +42,11 @@ public:
         int h
     );
 
-    void drawText(
-        const std::string& text,
+    void drawRectUI(
         int x,
-        int y
+        int y,
+        int w,
+        int h
     );
 
     void drawTexture(
@@ -52,6 +62,10 @@ public:
         Uint8 g,
         Uint8 b,
         Uint8 a
+    );
+
+    void setCamera(
+        Camera* camera
     );
 
     SDL_Renderer* getSDLRenderer();

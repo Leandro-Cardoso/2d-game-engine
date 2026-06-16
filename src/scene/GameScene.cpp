@@ -167,6 +167,17 @@ void GameScene::update(InputManager& input, Core& core) {
             map
         );
     }
+
+    core.getCamera().follow(
+        static_cast<int>(
+            player->getPosition().x +
+            player->getSprite().getWidth() / 2
+        ),
+        static_cast<int>(
+            player->getPosition().y +
+            player->getSprite().getHeight() / 2
+        )
+    );
 }
 
 void GameScene::render(
