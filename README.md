@@ -38,19 +38,7 @@ gráficas.
 * Artigo Acadêmico ⚙️
 
 ## ⚙️ Fases de Desenvolvimento
-
-### Fase 5 - Gerenciamento de Recursos
-
-* ✓ Implementação do Resource Manager.
-* Controle de carregamento e descarregamento.
-* Otimização de memoria.
-
-### Fase 6 - Sistema de Entidades
-
-* Criação da classe base Entity.
-* Sistema de atualização.
-* Gerenciamento de multiplas entidades.
-
+✓
 ### Fase 7 - Sistema de Colisão
 
 * Implementação de bounding box.

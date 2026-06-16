@@ -29,4 +29,6 @@ public:
     void render(
         Renderer& renderer
     ) override;
+
+    TileMap& getMap();
 };

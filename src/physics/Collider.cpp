@@ -17,6 +17,16 @@ Vector2 Collider::getSize() const {
     return size;
 }
 
+float Collider::getWidth() const
+{
+    return size.x;
+}
+
+float Collider::getHeight() const
+{
+    return size.y;
+}
+
 void Collider::setSize(
     float width,
     float height

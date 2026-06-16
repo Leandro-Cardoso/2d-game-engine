@@ -21,4 +21,9 @@ public:
     void render(
         Renderer& renderer
     );
+
+    bool isSolid(
+        int x,
+        int y
+    ) const;
 };

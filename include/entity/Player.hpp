@@ -1,6 +1,7 @@
 #pragma once
 
 #include "entity/Entity.hpp"
+#include "world/TileMap.hpp"
 
 class Player : public Entity {
 private:
@@ -18,5 +19,11 @@ public:
     void move(
         float dx,
         float dy
+    );
+
+    void tryMove(
+        int dx,
+        int dy,
+        TileMap& map
     );
 };

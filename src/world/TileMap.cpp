@@ -63,3 +63,30 @@ void TileMap::render(
         }
     }
 }
+
+bool TileMap::isSolid(
+    int x,
+    int y
+) const
+{
+    int col = x / tileSize;
+    int row = y / tileSize;
+
+    if (
+        row < 0 ||
+        row >= static_cast<int>(map.size())
+    )
+    {
+        return true;
+    }
+
+    if (
+        col < 0 ||
+        col >= static_cast<int>(map[row].size())
+    )
+    {
+        return true;
+    }
+
+    return map[row][col] == '1';
+}

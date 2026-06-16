@@ -125,9 +125,10 @@ void GameScene::update(InputManager& input, Core& core) {
             SDL_SCANCODE_UP
         )
     ) {
-        player->move(
+        player->tryMove(
             0,
-            -5
+            -5,
+            map
         );
     }
 
@@ -136,9 +137,10 @@ void GameScene::update(InputManager& input, Core& core) {
             SDL_SCANCODE_DOWN
         )
     ) {
-        player->move(
+        player->tryMove(
             0,
-            5
+            5,
+            map
         );
     }
 
@@ -147,9 +149,10 @@ void GameScene::update(InputManager& input, Core& core) {
             SDL_SCANCODE_LEFT
         )
     ) {
-        player->move(
+        player->tryMove(
             -5,
-            0
+            0,
+            map
         );
     }
 
@@ -158,9 +161,10 @@ void GameScene::update(InputManager& input, Core& core) {
             SDL_SCANCODE_RIGHT
         )
     ) {
-        player->move(
+        player->tryMove(
             5,
-            0
+            0,
+            map
         );
     }
 }
@@ -180,4 +184,10 @@ void GameScene::render(
             renderer
         );
     }
+}
+
+TileMap&
+GameScene::getMap()
+{
+    return map;
 }

@@ -8,8 +8,8 @@ Player::Player()
     position.y = 100;
 
     collider.setSize(
-        50,
-        50
+        64,
+        64
     );
 }
 
@@ -29,4 +29,35 @@ void Player::render(
 )
 {
     Entity::render(renderer);
+}
+
+void Player::tryMove(
+    int dx,
+    int dy,
+    TileMap& map
+)
+{
+    int newX =
+        static_cast<int>(position.x) + dx;
+
+    int newY =
+        static_cast<int>(position.y) + dy;
+
+    int width =
+        collider.getWidth();
+
+    int height =
+        collider.getHeight();
+
+    bool collision =
+        map.isSolid(newX, newY) ||
+        map.isSolid(newX + width - 1, newY) ||
+        map.isSolid(newX, newY + height - 1) ||
+        map.isSolid(newX + width - 1,
+                    newY + height - 1);
+
+    if (!collision)
+    {
+        move(dx, dy);
+    }
 }
