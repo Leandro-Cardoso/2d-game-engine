@@ -3,12 +3,12 @@
 
 Enemy::Enemy()
 {
-    position.x = 400;
-    position.y = 300;
+    position.x = 960;
+    position.y = 960;
 
     collider.setSize(
-        50,
-        50
+        64,
+        64
     );
 }
 

@@ -18,8 +18,8 @@ GameScene::GameScene()
     player = p.get();
 
     player->setPosition(
-        100,
-        100
+        96,
+        96
     );
 
     player->getSprite().setSize(
@@ -38,8 +38,8 @@ GameScene::GameScene()
     enemy = e.get();
 
     enemy->setPosition(
-        400,
-        300
+        960,
+        960
     );
 
     enemy->getSprite().setSize(

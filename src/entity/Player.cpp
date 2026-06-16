@@ -4,8 +4,8 @@
 Player::Player()
     : speed(5.0f)
 {
-    position.x = 100;
-    position.y = 100;
+    position.x = 64;
+    position.y = 64;
 
     collider.setSize(
         64,
