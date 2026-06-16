@@ -82,7 +82,7 @@ void OptionsScene::render(Renderer& renderer) {
 
     // Fullscreen status:
     if (fullscreen) {
-        renderer.drawRect(520, 200, 30, 30);
+        renderer.drawRectUI(520, 200, 30, 30);
     }
 
     // Barra de volume:

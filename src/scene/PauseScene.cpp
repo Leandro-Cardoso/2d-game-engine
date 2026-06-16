@@ -69,7 +69,7 @@ void PauseScene::render(Renderer& renderer) {
 
         // Selecao:
         if (i == selectedIndex) {
-            renderer.drawRect(x - 20, y - 5, 10, 40);
+            renderer.drawRectUI(x - 20, y - 5, 10, 40);
         }
 
         // Item:

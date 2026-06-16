@@ -38,16 +38,10 @@ gráficas.
 * Artigo Acadêmico ⚙️
 
 ## ⚙️ Fases de Desenvolvimento
-✓
-### Fase 7 - Sistema de Colisão
-
-* Implementação de bounding box.
-* Verificação de colisão com mapa.
-* Integração com entidades.
 
 ### Fase 8 - Testes e Validação
 
-* Criação do prototipo funcional.
+* ✓ Criação do prototipo funcional.
 * Testes de desempenho.
 * Correção de inconsistencias.
 
@@ -56,18 +50,6 @@ gráficas.
 * Revisão do TCC.
 * Consolidação de diagramas.
 * Preparação para entrega.
-
-###  ✓ Fase 1 - Planejamento formal: (COMPLETO)
-
-*  ✓ - Elaboração do Plano de Gerenciamento.
-*  ✓ - Definição da arquitetura inicial.
-*  ✓ - Levantamento de requisitos.
-
-### ✓ Fase 2 - Medelagem arquitetural (COMPLETO)
-
-* ✓ Modelagem UML (classes e modulos).
-* ✓ Definição de responsabilidades.
-* ✓ Estruturação dos pacotes da biblioteca.
 
 ## ⚙️ Requisitos
 
