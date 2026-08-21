@@ -20,13 +20,6 @@ gráficas.
 
 **Palavras-chave:** game engine; C++; arquitetura de software; jogos 2D; desempenho.
 
-### [➤ Abrir Documentação](https://leandro-cardoso.github.io/2d-game-engine/) ⚙️
-
-## 📄 Documentos para Praticas Extensionistas Integradoras VI:
-
-* [Introdução e Metodologia](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/INTRODUCAO-DO-PROJETO.pdf)
-* [Artigo](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/PEI-DESENVOLVIMENNTO-DE-GAME-ENGINE-2D-EM-CPP.pdf)
-
 ## 📄 Documentos
 
 * [PITCH](https://github.com/Leandro-Cardoso/2d-game-engine/blob/main/docs/assets/pdf/PITCH-Desenvolvimento-de-uma-Game-Engine-2D-em-C.pdf)
@@ -37,19 +30,9 @@ gráficas.
 * [Documentação](https://leandro-cardoso.github.io/2d-game-engine/) ⚙️
 * Artigo Acadêmico ⚙️
 
-## ⚙️ Fases de Desenvolvimento
+## ⚙️ Desenvolvimento
 
-### Fase 8 - Testes e Validação
-
-* ✓ Criação do prototipo funcional.
-* ✓ Testes de desempenho.
-* Correção de inconsistencias.
-
-### ⚙️ Fase 9 - Documentação Final
-
-* Revisão do TCC.
-* Consolidação de diagramas.
-* Preparação para entrega.
+O desenvolvimento dessa aplicação vai passar a ser feita a partir de outro repositório privado, pois sofrera mudanças e so voltarar a ficar publico com o lançamento da Game Engine.
 
 ## ✨ Features
 
